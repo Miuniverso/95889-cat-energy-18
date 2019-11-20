@@ -1,0 +1,36 @@
+.address {
+  background-color: #f2f2f2;
+}
+
+.address__text {
+  display: flex;
+  flex-direction: row;
+  padding-left: 19px;
+  // padding-right: 25px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.address__title {
+  color: #111111;
+  font-family: "Oswald Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.address__coordinates {
+  color: #444444;
+  font-family: "Arial MT";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+
+  padding-left: 9px;
+}
+
+.address__map {
+  height: 358px;
+}

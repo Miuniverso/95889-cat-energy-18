@@ -1,0 +1,29 @@
+// .main-nav {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.main-nav__list {
+  font-family: "Oswald Medium";
+
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  padding-top: 21px;
+  padding-bottom: 24px;
+  // border: 1px dotted #e6e6e6;
+}
+
+.main-nav__item__link {
+  @include link-base;
+  color: #111111;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}

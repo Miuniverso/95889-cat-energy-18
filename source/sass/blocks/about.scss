@@ -1,0 +1,121 @@
+.about__title {
+  color: #111111;
+  font-family: "Oswald Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  padding-left: 22px;
+  margin: 0;
+  padding-top: -4px;
+  margin-top: -3px;
+  padding-left: 20px;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 14px;
+}
+
+.about__item {
+  position: relative;
+
+  color: #444444;
+  font-family: "Arial MT";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  padding-right: 20px;
+  padding-left: 100px;
+  padding-bottom: 26px;
+
+  &--composition::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-composition.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: -2px;
+  }
+
+  &--type::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-type.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: -2px;
+  }
+
+  &--period::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-period.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: -2px;
+  }
+
+  &--changes::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-changes.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: -2px;
+  }
+}
+
+// .about__item--composition::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url("../img/icon-composition.png");
+//   background-repeat: no-repeat;
+//   width: 60px;
+//   height: 60px;
+//   left: 20px;
+//   top: -2px;
+// }
+
+// .about__item--type::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url("../img/icon-type.png");
+//   background-repeat: no-repeat;
+//   width: 60px;
+//   height: 60px;
+//   left: 20px;
+//   top: -2px;
+// }
+
+// .about__item--period::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url("../img/icon-period.png");
+//   background-repeat: no-repeat;
+//   width: 60px;
+//   height: 60px;
+//   left: 20px;
+//   top: -2px;
+// }
+
+// .about__item--changes::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url("../img/icon-changes.png");
+//   background-repeat: no-repeat;
+//   width: 60px;
+//   height: 60px;
+//   left: 20px;
+//   top: -2px;
+// }
