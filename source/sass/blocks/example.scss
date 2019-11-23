@@ -1,5 +1,5 @@
 .example {
-  background-color: #f2f2f2;
+  background-color: $bg-light;
 }
 
 .example__title {
@@ -8,16 +8,16 @@
   padding-top: 21px;
   padding-left: 20px;
 
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
 }
 
 .example__desctiption {
-  color: #444444;
-  font-family: "Arial MT";
+  color: $color-small-text;
+  font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -28,49 +28,9 @@
   padding-right: 25px;
 }
 
-.result {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  padding-top: 22px;
-}
-
-.result__item {
-  // margin-left: 20px;
-  // margin-right: 20px;
-}
-
-.indicator {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  border-radius: 3px;
-  border: 1px solid #cdcdcd;
-}
-
-.indicator__number {
-  color: #111111;
-  font-family: "Oswald Regular";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.indicator__description {
-  color: #444444;
-  font-family: "Arial MT";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-}
-
 .example__total {
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -90,9 +50,9 @@
   padding-right: 20px;
 }
 
-.example__switch__label {
-  color: #111111;
-  font-family: "Oswald Regular";
+.example__switch-label {
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

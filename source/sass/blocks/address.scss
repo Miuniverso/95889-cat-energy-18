@@ -1,5 +1,5 @@
 .address {
-  background-color: #f2f2f2;
+  background-color: $bg-light;
 }
 
 .address__text {
@@ -12,8 +12,8 @@
 }
 
 .address__title {
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -21,8 +21,8 @@
 }
 
 .address__coordinates {
-  color: #444444;
-  font-family: "Arial MT";
+  color: $color-small-text;
+  font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

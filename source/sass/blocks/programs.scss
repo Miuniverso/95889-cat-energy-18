@@ -19,7 +19,7 @@
   padding-bottom: 19px;
 
 
-  background-color: #f2f2f2;
+  background-color: $bg-light;
 
   &--slim::before {
     content: "";
@@ -45,8 +45,8 @@
 }
 
 .programs__title {
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 400;
   line-height: 37.02px;
@@ -58,8 +58,8 @@
 .programs__description {
   position: relative;
 
-  color: #444444;
-  font-family: "Arial MT";
+  color: $color-small-text;
+  font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -75,7 +75,7 @@
     opacity: 0.1;
     bottom: 5px;
     left: 1px;
-    background-color: #111111;
+    background-color: $color-big-text;
   }
 }
 
@@ -83,8 +83,8 @@
 .programs__button {
   @include link-base;
   position: relative;
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: @include font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;

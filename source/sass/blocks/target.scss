@@ -1,0 +1,54 @@
+.target {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.target__info {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.target__label {
+  @include label;
+
+  padding-left: 46px;
+}
+
+.target__data:checked,
+.target__data:not(:checked) {
+  display: none;
+}
+
+.target__label {
+  position: relative;
+}
+
+.target__data:checked + label::before,
+.target__data:not(:checked) + label::before {
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: -3px;
+  width: 29px;
+  height: 29px;
+  border: 1px solid $color-border;
+  background-color: $color-ligth-text;
+
+  border-radius: 100%;
+}
+
+.target__data:checked + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.target__data:checked + label:after {
+  left: 8px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  background-color: $color-green;
+  border-radius: 100%;
+}

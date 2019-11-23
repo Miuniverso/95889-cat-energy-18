@@ -1,6 +1,6 @@
 .additions__title {
-  color: #111111;
-  font-family: "Oswald Regular";
+  color: $color-big-text;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -13,7 +13,7 @@
     content: "";
     width: 53px;
     height: 3px;
-    background-color: #68b738;
+    background-color: $color-green;
     right: 0;
     top: 48px;
   }
@@ -27,17 +27,17 @@
 }
 
 .addition {
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $color-border;
   padding-bottom: 10px;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $color-border;
   }
 }
 
 .addition__title {
-  color: #222222;
-  font-family: "Oswald Regular";
+  color: $color-title;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -45,8 +45,8 @@
 }
 
 .addition__info {
-  color: #444444;
-  font-family: "Arial MT";
+  color: $color-small-text;
+  font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -69,7 +69,7 @@
   margin-right: 20px;
 }
 
-.additions__action__image {
+.additions__action-image {
   margin: 0 auto;
   display: block;
   padding-top: 65px;
@@ -77,8 +77,8 @@
 }
 
 .additions__action-description {
-  color: #ffffff;
-  font-family: "Arial MT";
+  color: $color-ligth-text;
+  font-family: $font-secondary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
