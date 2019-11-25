@@ -1,0 +1,21 @@
+.copyright {
+  margin-left: 20px;
+  margin-right: 13px;
+  padding-top: 19px;
+  padding-bottom: 24px;
+}
+
+.copyright__link {
+  @include link-base;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $color-small-text;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}

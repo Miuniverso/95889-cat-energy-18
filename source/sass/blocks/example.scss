@@ -1,0 +1,60 @@
+.example {
+  background-color: $bg-light;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 21px;
+  padding-left: 20px;
+
+  color: $color-big-text;
+  font-family: $font-primary;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.example__desctiption {
+  color: $color-small-text;
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  padding-top: 23px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+.example__total {
+  color: $color-big-text;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  padding-top: 23px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.example__img {
+  margin-top: 34px;
+}
+
+.example__switch {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__switch-label {
+  color: $color-big-text;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

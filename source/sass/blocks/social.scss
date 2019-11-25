@@ -1,0 +1,19 @@
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $color-border-light;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 73px;
+  padding-right: 77px;
+}
+
+.social__link {
+  position: relative;
+}

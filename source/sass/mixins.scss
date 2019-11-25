@@ -1,0 +1,43 @@
+@mixin link-base {
+  text-decoration: none;
+}
+
+@mixin button {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 73px;
+  padding-right: 73px;
+
+  background-color: $color-green;
+}
+
+@mixin label {
+  color: $color-title;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin input {
+  border: 1px solid $color-border;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex-grow: 1;
+  margin-right: 20px;
+
+  &[placeholder] {
+    color: $color-small-text;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

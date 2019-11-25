@@ -1,0 +1,42 @@
+.form-main__title {
+  color: $color-big-text;
+  font-family: $font-primary;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  padding-left: 20px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.form-main__description {
+  color: $color-big-text;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 25px;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-main__form {
+  margin-top: 39px;
+}
+
+.form-main__cat-info {
+  padding-bottom: 9px;
+}
+
+.form-main__target {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
