@@ -13,15 +13,13 @@
   @include label;
 
   padding-left: 46px;
+
+  position: relative;
 }
 
 .target__data:checked,
 .target__data:not(:checked) {
   display: none;
-}
-
-.target__label {
-  position: relative;
 }
 
 .target__data:checked + label::before,
@@ -38,17 +36,15 @@
   border-radius: 100%;
 }
 
-.target__data:checked + label:after {
-  content: "";
-  position: absolute;
-  transition: all 0.2s ease;
-}
-
-.target__data:checked + label:after {
+.target__data:checked + label::after {
   left: 8px;
   top: 7px;
   width: 12px;
   height: 12px;
   background-color: $color-green;
   border-radius: 100%;
+
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
 }

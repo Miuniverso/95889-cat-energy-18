@@ -18,3 +18,9 @@
 .cat-info__data {
   @include input;
 }
+
+@media (min-width: $tablet) {
+  .cat-info__label {
+    font-size: 20px;
+  }
+}

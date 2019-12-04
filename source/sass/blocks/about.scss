@@ -75,3 +75,110 @@
     top: -2px;
   }
 }
+
+@media (min-width: $tablet) {
+  .about {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about__title {
+    font-size: 60px;
+    margin-top: 69px;
+    padding-left: 0;
+  }
+
+  .about__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    font-size: 16px;
+    line-height: 24px;
+
+    max-width: 245px;
+
+    padding-left: 0;
+    padding-top: 109px;
+    padding-bottom: 92px;
+    margin-right: 59px;
+    margin-top: 44px;
+
+    &--composition {
+      background: url("../img/1.png");
+      background-repeat: no-repeat;
+      background-position: 65% top;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-composition-tablet.png");
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        left: 0;
+      }
+    }
+
+    &--type {
+      background: url("../img/2.png");
+      background-repeat: no-repeat;
+      background-position: 80% top;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-type-tablet.png");
+        background-repeat: no-repeat;
+        height: 80px;
+        width: 80px;
+        left: 0;
+      }
+    }
+
+    &--period {
+      background: url("../img/3.png");
+      background-repeat: no-repeat;
+      background-position: 80% top;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-period-tablet.png");
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        left: 0;
+      }
+    }
+
+    &--changes {
+      background: url("../img/4.png");
+      background-repeat: no-repeat;
+      background-position: 86% top;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-changes-tablet.png");
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about__title {
+    margin-top: 67px;
+    margin-left: 80px;
+  }
+
+  .about__list {
+    margin-left: 81px;
+  }
+}

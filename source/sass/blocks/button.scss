@@ -1,0 +1,14 @@
+.button {
+  // min-width: 280px;
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .button--action {
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+  }
+}

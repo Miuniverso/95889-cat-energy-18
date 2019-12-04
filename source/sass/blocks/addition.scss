@@ -1,0 +1,41 @@
+.addition {
+  border-bottom: 1px solid $color-border;
+  padding-bottom: 10px;
+
+  &:first-child {
+    border-top: 1px solid $color-border;
+  }
+}
+
+.addition__title {
+  color: $color-title;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.addition__info {
+  color: $color-small-text;
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  border-collapse: collapse;
+  margin-top: 10px;
+
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.addition__definition {
+  text-align: right;
+}
+
+@media (min-width: $tablet) {
+  .addition__title {
+    font-size: 20px;
+  }
+}

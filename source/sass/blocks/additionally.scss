@@ -12,7 +12,7 @@
 
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -53,7 +53,7 @@
   background-color: $color-ligth-text;
 }
 
-.additionally__data:checked + label:after {
+.additionally__data:checked + label::after {
   content: "";
   position: absolute;
   transition: all 0.2s ease;
@@ -88,3 +88,10 @@
   padding-top: 21px;
   padding-bottom: 32px;
 }
+
+// @media (min-width: $tablet) {
+//   .additionally__title {
+//     font-size: 36px;
+//     margin-left: 43px;
+//   }
+// }

@@ -1,4 +1,3 @@
-
 .result {
   list-style: none;
   display: flex;
@@ -11,4 +10,10 @@
 .result__item {
   // margin-left: 20px;
   // margin-right: 20px;
+}
+
+@media (min-width: $tablet) {
+  .result__item {
+    margin-right: 42px;
+  }
 }

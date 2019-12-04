@@ -40,3 +40,18 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+@media (min-width: $tablet) {
+  .form-main__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .form-main__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 45%;
+  }
+}

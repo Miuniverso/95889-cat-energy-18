@@ -16,7 +16,8 @@
   padding-top: 28px;
   padding-bottom: 23px;
 
-  margin: 0;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 .main-intro__tagline {
@@ -32,7 +33,10 @@
 
 .main-intro__image {
   padding-top: 25px;
-  padding-bottom: 11px;
+  padding-bottom: 3px;
+  margin: 0 auto;
+
+  display: block;
 }
 
 .main-intro__button {
@@ -44,4 +48,104 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  // margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: $tablet) {
+  .main-intro {
+    background-image: none;
+    text-align: center;
+    position: relative;
+  }
+
+  .main-intro__title {
+    color: $color-big-text;
+    font-family: $font-primary;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+
+    padding-top: 41px;
+
+
+    max-width: 420px;
+    margin-left: 117px;
+  }
+
+  .main-intro__tagline {
+    display: block;
+
+    color: $color-big-text;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    margin-left: 120px;
+    padding-top: 18px;
+  }
+
+  .main-intro__image {
+    padding-top: 20px;
+    margin-bottom: -46px;
+  }
+
+  .main-intro__button {
+    position: absolute;
+    top: 270px;
+    left: 119px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    padding-left: 26px;
+    padding-right: 29px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-intro {
+    position: static;
+  }
+
+  .main-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+    width: 720px;
+    height: 696px;
+
+    z-index: -1;
+  }
+
+  .main-intro__title {
+    margin-top: 51px;
+    margin-left: 190px;
+  }
+
+  .main-intro__tagline {
+    margin-left: 190px;
+  }
+
+  .main-intro__image {
+    display: inline-block;
+    margin-top: -282px;
+    margin-left: 232px;
+  }
+
+  .main-intro__button {
+    margin-left: 71px;
+    margin-top: 186px;
+  }
 }
