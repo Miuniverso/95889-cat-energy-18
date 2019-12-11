@@ -17,9 +17,9 @@
     content: "";
     height: 3px;
     background-color: $color-green;
-    width: 136px;
+    width: 43%;
     top: 42px;
-    left: 184px;
+    right: 0;
   }
 }
 
@@ -95,3 +95,133 @@
 //     margin-left: 43px;
 //   }
 // }
+
+
+@media (min-width: $tablet) {
+  .additionally {
+    margin-top: 41px;
+  }
+
+  .additionally__title {
+    font-size: 36px;
+    padding-left: 69px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4%;
+      height: 3px;
+      top: 45px;
+      left: 0;
+      background-color: #68b738;
+    }
+
+    &::after {
+      width: 58%;
+      top: 45px;
+    }
+  }
+
+  .additionally__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    margin-left: 51px;
+    margin-right: 44px;
+    justify-content: space-between;
+  }
+
+  .additionally__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 49%;
+    margin: 0;
+    padding-bottom: 22px;
+    margin-top: 31px;
+    // margin-bottom: 32px;
+    box-sizing: border-box;
+  }
+
+  .additionally__label {
+    font-size: 20px;
+
+    padding-left: 78px;
+  }
+
+  .additionally__data:checked + label::before,
+  .additionally__data:not(:checked) + label::before {
+    width: 38px;
+    height: 38px;
+    top: -10px;
+  }
+
+  .additionally__data:checked + label::after {
+    left: 29px;
+    top: 2px;
+  }
+
+  .additionally__button {
+    font-size: 20px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 41px;
+    margin-left: 70px;
+    padding-left: 65px;
+    padding-right: 65px;
+
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .additionally__legend {
+    font-size: 16px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 0;
+
+    margin-top: 61px;
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additionally {
+    margin-top: 44px;
+    margin-bottom: 81px;
+  }
+
+  .additionally__title {
+    padding-left: 109px;
+
+    &::before {
+      width: 5%;
+    }
+
+    &::after {
+      width: 75%;
+    }
+  }
+
+  .additionally__list {
+    flex-wrap: nowrap;
+    margin-left: 91px;
+    margin-right: 50px;
+  }
+
+  .additionally__button {
+    margin-top: 49px;
+    margin-left: 110px;
+    padding-left: 207px;
+    padding-right: 207px;
+  }
+
+  .additionally__legend {
+    margin-top: 66px;
+    margin-left: 77px;
+  }
+}

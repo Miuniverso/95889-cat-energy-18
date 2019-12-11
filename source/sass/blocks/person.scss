@@ -17,9 +17,9 @@
     content: "";
     height: 3px;
     background-color: $color-green;
-    width: 99px;
+    width: 31%;
     top: 42px;
-    left: 221px;
+    right: 0;
   }
 }
 
@@ -71,4 +71,82 @@
   height: 20px;
   top: 0;
   right: 0;
+}
+
+@media (min-width: $tablet) {
+  .person {
+    margin-top: 53px;
+  }
+
+  .person__title {
+    font-size: 36px;
+    margin-bottom: 46px;
+    padding-left: 69px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      background-color: $color-green;
+      width: 4%;
+      top: 44px;
+      left: 0;
+    }
+
+    &::after {
+      width: 19%;
+      top: 44px;
+    }
+  }
+
+  .person__title--break {
+    display: none;
+  }
+
+  .person__info {
+    padding-left: 51px;
+    padding-right: 47px;
+  }
+
+  .person__label {
+    font-size: 20px;
+    padding-right: 15px;
+  }
+
+  .person__data[placeholder] {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .person {
+    margin-top: 18px;
+  }
+
+  .person__title {
+    padding-left: 109px;
+
+    &::before {
+      width: 5%;
+    }
+
+    &::after {
+      width: 54%;
+    }
+  }
+
+  .person__info-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-left: 92px;
+    margin-right: 91px;
+  }
+
+  .person__info {
+    padding: 0;
+    flex-basis: 48%;
+  }
 }

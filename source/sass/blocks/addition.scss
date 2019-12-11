@@ -35,7 +35,72 @@
 }
 
 @media (min-width: $tablet) {
+  .addition {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #e6e6e6;
+    // border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 37px;
+    padding-right: 36px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
+
   .addition__title {
     font-size: 20px;
+    min-width: 60%;
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0;
+  }
+
+  .addition__info {
+    max-width: 40%;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .addition__button {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .addition {
+    flex-wrap: nowrap;
+    align-items: center;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .addition__title {
+    min-width: 36%;
+  }
+
+  .addition__info {
+    max-width: 40%;
+    font-size: 16px;
+    margin-right: 34px;
+  }
+
+  .addition__button {
+    margin: 0;
+    width: 48%;
   }
 }

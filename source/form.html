@@ -26,7 +26,7 @@
           <a class="main-nav__item-link inner-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link inner-nav__link inner-nav__link--current">Подбор программы</a>
+          <a class="main-nav__item-link inner-nav__link main-nav__item-link--current inner-nav__link--current">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -67,43 +67,49 @@
         </p>
       </div>
       <div class="form-main__person person">
-        <h2 class="person__title">Контактные данные<br>(владельца кота)</h2>
-        <p class="person__info">
-          <label class="person__label" for="person-email">E-mail:*</label>
-          <input class="person__data" id="person-email" type="email" placeholder="kuklachev@gmail.com">
-        </p>
-        <p class="person__info">
-          <label class="person__label" for="person-telephone">Телефон:*</label>
-          <input class="person__data" id="person-telephone" type="tel" placeholder="8 (960) 900-60-90">
-        </p>
+        <h2 class="person__title">Контактные данные <br class="person__title person__title--break">(владельца кота)</h2>
+        <div class="person__info-wrapper">
+          <p class="person__info">
+            <label class="person__label" for="person-email">E-mail:*</label>
+            <input class="person__data" id="person-email" type="email" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="person__info">
+            <label class="person__label" for="person-telephone">Телефон:*</label>
+            <input class="person__data" id="person-telephone" type="tel" placeholder="8 (960) 900-60-90">
+          </p>
+        </div>
       </div>
       <div class="form-main__comment comment">
         <h2 class="comment__title">Комментарий</h2>
-        <textarea class="comment__area" cols="38" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="comment__wrapper">
+          <textarea class="comment__area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
       <div class="form-main__additionally additionally">
         <h2 class="additionally__title">Дополнительно</h2>
-        <p class="additionally__info">
-          <input class="additionally__data" id="not-sugar" type="checkbox" checked>
-          <label class="additionally__label" for="not-sugar">Сахарозаменитель</label>
-        </p>
-        <p class="additionally__info">
-          <input class="additionally__data" id="water" type="checkbox">
-          <label class="additionally__label" for="water">Питьевая вода</label>
-        </p>
-        <p class="additionally__info">
-          <input class="additionally__data" id="milk" type="checkbox">
-          <label class="additionally__label" for="milk">Молоко</label>
-        </p>
-        <p class="additionally__info">
-          <input class="additionally__data" id="vitamins" type="checkbox">
-          <label class="additionally__label" for="vitamins">Витамины</label>
-        </p>
+        <div class="additionally__list">
+          <p class="additionally__info">
+            <input class="additionally__data" id="not-sugar" type="checkbox" checked>
+            <label class="additionally__label" for="not-sugar">Сахарозаменитель</label>
+          </p>
+          <p class="additionally__info">
+            <input class="additionally__data" id="water" type="checkbox">
+            <label class="additionally__label" for="water">Питьевая вода</label>
+          </p>
+          <p class="additionally__info">
+            <input class="additionally__data" id="milk" type="checkbox">
+            <label class="additionally__label" for="milk">Молоко</label>
+          </p>
+          <p class="additionally__info">
+            <input class="additionally__data" id="vitamins" type="checkbox">
+            <label class="additionally__label" for="vitamins">Витамины</label>
+          </p>
+        </div>
         <button class="additionally__button button--action button" type="submit">Отправить заявку</button>
+        <small class="additionally__legend">* — Обязательные поля</small>
       </div>
-      <small class="additionally__legend">* — Обязательные поля</small>
     </form>
-    <section class="address">
+    <section class="address address--inner">
       <h2 class="visually-hidden">Адрес магазина Cat Energy</h2>
       <div class="address__text wrapper">
         <b class="address__title">приглашаем к сотрудничеству дилеров!</b>

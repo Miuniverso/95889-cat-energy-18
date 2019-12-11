@@ -20,7 +20,21 @@
 }
 
 @media (min-width: $tablet) {
+  .cat-info {
+    padding-bottom: 20px;
+  }
+
   .cat-info__label {
     font-size: 20px;
+    padding-right: 18px;
+  }
+
+  .cat-info__data {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &[placeholder] {
+      font-size: 20px;
+    }
   }
 }

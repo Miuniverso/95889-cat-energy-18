@@ -40,6 +40,11 @@
 @media (min-width: $tablet) {
   .social {
     border: none;
+    padding: 0;
+  }
+
+  .social__item:not(:first-child) {
+    margin-left: 38px;
   }
 
   .social__link--vk {

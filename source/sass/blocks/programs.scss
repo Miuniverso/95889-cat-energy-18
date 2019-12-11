@@ -161,9 +161,9 @@
       position: absolute;
       background-image: url("../img/cat-mass-tablet.png");
       background-repeat: no-repeat;
-      width: 200px;
-      height: 268px;
-      right: 96px;
+      width: 268px;
+      height: 200px;
+      right: 28px;
       top: 91px;
     }
   }
@@ -212,6 +212,8 @@
     margin-bottom: 5px;
     margin-top: 5px;
 
+    // НЕ ПОЯВЛЯЮТСЯ ИКОНКИ
+
     &--slim::before {
       content: "";
       position: absolute;
@@ -219,8 +221,8 @@
       background-repeat: no-repeat;
       width: 100px;
       height: 106px;
-      left: 22px;
-      top: 22px;
+      // left: 22px;
+      // top: 22px;
     }
 
     &--slim::after {
@@ -234,8 +236,8 @@
       background-repeat: no-repeat;
       width: 134px;
       height: 100px;
-      left: 22px;
-      top: 22px;
+      // left: 22px;
+      // top: 22px;
     }
 
     &--mass::after {

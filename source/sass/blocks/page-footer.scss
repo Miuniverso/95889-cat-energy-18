@@ -32,3 +32,11 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-footer {
+    padding-left: 110px;
+    padding-right: 102px;
+    padding-top: 29px;
+  }
+}

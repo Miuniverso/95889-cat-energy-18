@@ -36,9 +36,11 @@
 }
 
 @media (min-width: $tablet) {
-  // .address {
-  //   margin-top: 399px;
-  // }
+  .address--inner {
+    background-color: $bg-light;
+
+    margin-top: 76px;
+  }
 
   .address__text {
     justify-content: space-between;
@@ -47,6 +49,8 @@
     padding-right: 72px;
     padding-top: 64px;
     padding-bottom: 58px;
+
+    background-color: #f2f2f2;
   }
 
   .address__title {
@@ -85,11 +89,12 @@
     left: 111px;
     max-width: 570px;
     box-sizing: border-box;
-    padding: 0;
+
     padding-left: 76px;
-    padding-right: 151px;
-    padding-top: 65px;
-    padding-bottom: 37px;
+    padding-right: 92px;
+    padding-top: 61px;
+    padding-bottom: 57px;
+    text-align: left;
   }
 
   .address__title {
