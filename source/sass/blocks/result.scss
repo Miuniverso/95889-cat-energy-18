@@ -4,7 +4,7 @@
   justify-content: space-around;
   padding: 0;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 9px;
 }
 
 .result__item {
@@ -13,7 +13,17 @@
 }
 
 @media (min-width: $tablet) {
+  .result {
+    padding-top: 21px;
+  }
+
   .result__item {
-    margin-right: 42px;
+    margin-right: 45px;
+
+    // max-width: 162px;
   }
 }
+
+// @media (min-width: $desktop) {
+//
+// }

@@ -87,26 +87,28 @@
 @media (min-width: $desktop) {
   .form-main__title {
     margin-top: 42px;
-    margin-left: 90px;
+    margin-left: -20px;
   }
 
   .form-main__description {
-    margin-left: 90px;
-    padding-right: 1000px;
+    margin-left: -20px;
+    max-width: 385px;
   }
 
   .form-main__cat-info {
-    width: 42%;
-    margin-left: 40px;
+    width: 48%;
     display: inline-block;
     vertical-align: top;
+
+    padding-left: 0;
   }
 
   .form-main__target {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    width: 36%;
+    width: 42%;
     margin-left: 14px;
+    padding-right: 27px;
   }
 }

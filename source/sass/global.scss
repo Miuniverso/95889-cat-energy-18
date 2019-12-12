@@ -12,8 +12,32 @@ body {
   margin: -1px;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: $mobile;
+
+  box-sizing: border-box;
+
+  // outline: 1px solid;
+}
+
+
 @media (min-width: $tablet) {
-  body {
-    margin: 0;
+  .container {
+    min-width: $tablet;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .container {
+    min-width: $desktop;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+// @media (min-width: $tablet) {
+//   body {
+//     margin: 0;
+//   }
+// }

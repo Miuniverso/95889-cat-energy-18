@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.page-header--center {
+  max-width: $mobile;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
 .page-header__wrapper {
   padding-top: 12px;
   /* padding-bottom: 16px; */
@@ -40,6 +47,13 @@
     padding-right: 30px;
   }
 
+  .page-header--center {
+    max-width: $tablet;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+  }
+
   .page-header__wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -64,8 +78,10 @@
 @media (min-width: $desktop) {
   .page-header {
     padding-top: 32px;
-    padding-right: 110px;
-    padding-left: 110px;
+  }
+
+  .page-header__wrapper {
+    padding-left: 9px;
   }
 
   .page-header__logo-image {

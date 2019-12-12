@@ -7,7 +7,7 @@
   list-style: none;
   padding: 0;
 
-  margin-top: 31px;
+  margin-top: 22px;
 }
 
 .programs__item {
@@ -129,11 +129,13 @@
     }
   }
 
+  .programs__list {
+    margin-top: 31px;
+  }
+
   .programs__item {
     padding-top: 76px;
     padding-left: 54px;
-    // padding-right: 21px;
-    // margin-bottom: 20px;
     padding-bottom: 59px;
     margin-bottom: 30px;
 
@@ -181,14 +183,17 @@
 }
 
 @media (min-width: $desktop) {
+  .programs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .programs__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 170px;
+    margin-top: 152px;
   }
 
   .programs__title {
@@ -208,15 +213,11 @@
     max-width: 570px;
     padding: 0;
     padding-bottom: 59px;
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-bottom: 5px;
-    margin-top: 5px;
-
-    // НЕ ПОЯВЛЯЮТСЯ ИКОНКИ
+    margin-top: -8px;
 
     &--slim::before {
-      content: "";
-      position: absolute;
       background-image: url("../img/cat-slim-desktop.png");
       background-repeat: no-repeat;
       width: 100px;
@@ -230,8 +231,6 @@
     }
 
     &--mass::before {
-      content: "";
-      position: absolute;
       background-image: url("../img/cat-mass-desktop.png");
       background-repeat: no-repeat;
       width: 134px;

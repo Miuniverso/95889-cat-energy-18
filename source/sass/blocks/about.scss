@@ -173,12 +173,21 @@
 }
 
 @media (min-width: $desktop) {
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .about__title {
     margin-top: 67px;
-    margin-left: 80px;
+    // margin-left: 80px;
   }
 
   .about__list {
-    margin-left: 81px;
+    // margin-left: 81px;
+  }
+
+  .about__item {
+    margin-right: -21px;
   }
 }

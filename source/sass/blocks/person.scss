@@ -124,7 +124,7 @@
   }
 
   .person__title {
-    padding-left: 109px;
+    padding-left: 0;
 
     &::before {
       width: 5%;
@@ -140,13 +140,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    margin-left: 92px;
-    margin-right: 91px;
   }
 
   .person__info {
     padding: 0;
-    flex-basis: 48%;
+    flex-basis: 47%;
+  }
+
+  .person__label {
+    font-size: 20px;
+    padding-right: 21px;
+    padding-left: 0;
+  }
+
+  .person__data {
+    margin-right: 0;
   }
 }

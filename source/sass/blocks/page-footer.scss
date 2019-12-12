@@ -1,6 +1,9 @@
 .page-footer {
-  text-align: center;
   background-color: $bg-light;
+}
+
+.page-footer__wrapper {
+  text-align: center;
 }
 
 .page-footer__logo {
@@ -14,9 +17,11 @@
 
 @media (min-width: $tablet) {
   .page-footer {
-    text-align: center;
-
     background-color: #f2f2f2;
+  }
+
+  .page-footer__wrapper {
+    text-align: center;
 
     display: flex;
     justify-content: space-between;
@@ -34,7 +39,7 @@
 }
 
 @media (min-width: $desktop) {
-  .page-footer {
+  .page-footer-wrapper {
     padding-left: 110px;
     padding-right: 102px;
     padding-top: 29px;

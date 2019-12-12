@@ -196,7 +196,7 @@
   }
 
   .additionally__title {
-    padding-left: 109px;
+    padding-left: 0;
 
     &::before {
       width: 5%;
@@ -209,13 +209,35 @@
 
   .additionally__list {
     flex-wrap: nowrap;
-    margin-left: 91px;
-    margin-right: 50px;
+
+    margin: 0;
+    // margin-left: 91px;
+    // margin-right: 50px;
+  }
+
+  .additionally__info {
+    width: 20%;
+  }
+
+  .additionally__data:checked + label::before,
+  .additionally__data:not(:checked) + label::before {
+    top: -8px;
+    left: -1px;
+  }
+
+  .additionally__data:checked + label::after {
+    left: 10px;
+    top: 4px;
+  }
+
+  .additionally__label {
+    padding-top: 2px;
+    padding-left: 58px;
   }
 
   .additionally__button {
-    margin-top: 49px;
-    margin-left: 110px;
+    margin: 0;
+    margin-top: 50px;
     padding-left: 207px;
     padding-right: 207px;
   }

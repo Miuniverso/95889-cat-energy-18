@@ -100,7 +100,7 @@
   }
 
   .comment__title {
-    padding-left: 109px;
+    padding-left: 0;
 
     &::before {
       width: 5%;
@@ -112,7 +112,6 @@
   }
 
   .comment__area {
-    margin-left: 110px;
-    margin-right: 110px;
+    margin: 0;
   }
 }

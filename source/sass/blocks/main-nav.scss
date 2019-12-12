@@ -44,11 +44,15 @@
   }
 
   .main-nav__item:not(:last-child) {
-    padding-right: 36px;
+    padding-right: 35px;
   }
 }
 
 @media (min-width: $desktop) {
+  .main-nav__list {
+    padding-right: 9px;
+  }
+
   .main-nav__item-link {
     font-size: 20px;
     padding-bottom: 6px;
