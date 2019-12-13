@@ -1,7 +1,5 @@
 body {
   margin: 0 auto;
-  // width: 320px;
-  // outline: 1px solid;
 }
 
 .visually-hidden {
@@ -14,7 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: $mobile;
+  min-width: $mobile;
 
   box-sizing: border-box;
 
@@ -24,20 +22,15 @@ body {
 
 @media (min-width: $tablet) {
   .container {
-    min-width: $tablet;
+    min-width: auto;
   }
 }
 
 
 @media (min-width: $desktop) {
   .container {
-    min-width: $desktop;
+    width: $desktop;
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-// @media (min-width: $tablet) {
-//   body {
-//     margin: 0;
-//   }
-// }

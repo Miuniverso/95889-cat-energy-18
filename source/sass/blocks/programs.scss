@@ -136,6 +136,8 @@
   .programs__item {
     padding-top: 76px;
     padding-left: 54px;
+    // padding-right: 21px;
+    // margin-bottom: 20px;
     padding-bottom: 59px;
     margin-bottom: 30px;
 
@@ -218,12 +220,13 @@
     margin-top: -8px;
 
     &--slim::before {
+      display: block;
       background-image: url("../img/cat-slim-desktop.png");
       background-repeat: no-repeat;
       width: 100px;
       height: 106px;
-      // left: 22px;
-      // top: 22px;
+      top: 41px;
+      left: 52px;
     }
 
     &--slim::after {
@@ -231,12 +234,13 @@
     }
 
     &--mass::before {
+      display: block;
       background-image: url("../img/cat-mass-desktop.png");
       background-repeat: no-repeat;
       width: 134px;
       height: 100px;
-      // left: 22px;
-      // top: 22px;
+      top: 47px;
+      left: 34px;
     }
 
     &--mass::after {
