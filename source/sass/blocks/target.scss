@@ -13,15 +13,13 @@
   @include label;
 
   padding-left: 46px;
+
+  position: relative;
 }
 
 .target__data:checked,
 .target__data:not(:checked) {
   display: none;
-}
-
-.target__label {
-  position: relative;
 }
 
 .target__data:checked + label::before,
@@ -38,17 +36,48 @@
   border-radius: 100%;
 }
 
-.target__data:checked + label:after {
+.target__data:checked + label::after {
   content: "";
   position: absolute;
-  transition: all 0.2s ease;
-}
 
-.target__data:checked + label:after {
   left: 8px;
   top: 7px;
   width: 12px;
   height: 12px;
   background-color: $color-green;
   border-radius: 100%;
+}
+
+@media (min-width: $tablet) {
+  .target {
+    border: 1px solid $color-border;
+  }
+
+  .target__info {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+
+  .target__data:checked + label::before,
+  .target__data:not(:checked) + label::before {
+    left: -2px;
+    top: -3px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .target__data:checked + label::after {
+    left: 9px;
+    top: 8px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .target__label {
+    font-size: 20px;
+    display: inline-block;
+
+    padding-top: 7px;
+    padding-left: 57px;
+  }
 }

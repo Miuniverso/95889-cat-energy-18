@@ -40,3 +40,75 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+@media (min-width: $tablet) {
+  .form-main__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+
+    margin-top: 27px;
+    margin-left: 9px;
+  }
+
+  .form-main__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 45%;
+
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  .form-main__form {
+    // padding-left: 51px;
+    // padding-right: 47px;
+    margin-top: 66px;
+  }
+
+  .form-main__cat-info {
+    padding-left: 51px;
+    padding-right: 47px;
+  }
+
+  .form-main__target {
+    padding-left: 28px;
+    padding-right: 20px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+
+    margin-left: 72px;
+    margin-top: 43px;
+    margin-right: 67px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-main__title {
+    margin-top: 42px;
+    margin-left: -20px;
+  }
+
+  .form-main__description {
+    margin-left: -20px;
+    max-width: 385px;
+  }
+
+  .form-main__cat-info {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+
+    padding-left: 0;
+  }
+
+  .form-main__target {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 42%;
+    margin-left: 14px;
+    padding-right: 27px;
+  }
+}

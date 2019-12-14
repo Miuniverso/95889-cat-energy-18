@@ -1,13 +1,17 @@
 .social {
   list-style: none;
+
   padding: 0;
   display: flex;
   margin: 0;
   justify-content: space-between;
   align-items: center;
+
   padding-top: 23px;
   padding-bottom: 16px;
+
   border-bottom: 1px solid $color-border-light;
+
   margin-left: 20px;
   margin-right: 20px;
   padding-left: 73px;
@@ -16,4 +20,47 @@
 
 .social__link {
   position: relative;
+}
+
+.social__link--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.social__link--instagram {
+  width: 23px;
+  height: 23px;
+}
+
+.social__link--facebook {
+  width: 10px;
+  height: 19px;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    border: none;
+    padding: 0;
+  }
+
+  .social__item:not(:first-child) {
+    margin-left: 38px;
+  }
+
+  .social__link--vk {
+    width: 30px;
+    height: 16px;
+    margin-right: -10px;
+  }
+
+  .social__link--instagram {
+    width: 23px;
+    height: 23px;
+    margin-right: -10px;
+  }
+
+  .social__link--facebook {
+    width: 14px;
+    height: 28px;
+  }
 }

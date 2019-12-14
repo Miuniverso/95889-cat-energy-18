@@ -17,14 +17,19 @@
     content: "";
     height: 3px;
     background-color: $color-green;
-    width: 158px;
+    width: 50%;
     top: 28px;
-    left: 162px;
+    right: 0;
   }
 }
 
+.comment__wrapper {
+  display: flex;
+}
+
 .comment__area {
-  display: block;
+  // display: block;
+  flex-grow: 1;
   min-height: 124px;
   border: 1px solid $color-border;
   resize: none;
@@ -42,5 +47,71 @@
     padding-right: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .comment {
+    margin-top: 41px;
+  }
+
+  .comment__title {
+    font-size: 36px;
+    padding-left: 69px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      background-color: $color-green;
+      width: 4%;
+      top: 30px;
+      left: 0;
+    }
+
+    &::after {
+      width: 62%;
+      top: 30px;
+    }
+  }
+
+  .comment__wrapper {
+    margin-top: 47px;
+  }
+
+  .comment__area {
+    padding-top: 20px;
+    margin-left: 70px;
+    margin-right: 67px;
+
+    &[placeholder] {
+      font-size: 20px;
+
+      padding-top: 15px;
+      padding-left: 17px;
+      padding-bottom: 34px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .comment {
+    margin-top: 57px;
+  }
+
+  .comment__title {
+    padding-left: 0;
+
+    &::before {
+      width: 5%;
+    }
+
+    &::after {
+      width: 77%;
+    }
+  }
+
+  .comment__area {
+    margin: 0;
   }
 }

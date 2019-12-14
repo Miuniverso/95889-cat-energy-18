@@ -1,0 +1,9 @@
+@media (min-width: $desktop) {
+  .inner-nav__link {
+    color: $color-big-text;
+  }
+
+  .inner-nav__link--current {
+    border-bottom: 2px solid $color-green;
+  }
+}
