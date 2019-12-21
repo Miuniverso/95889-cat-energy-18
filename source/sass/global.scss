@@ -10,22 +10,18 @@ body {
   margin: -1px;
 }
 
+
 .container {
   margin: 0 auto;
-  min-width: $mobile;
-
+  width: $mobile;
   box-sizing: border-box;
-
-  // outline: 1px solid;
 }
-
 
 @media (min-width: $tablet) {
   .container {
-    min-width: auto;
+    width: $tablet;
   }
 }
-
 
 @media (min-width: $desktop) {
   .container {

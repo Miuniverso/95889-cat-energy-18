@@ -43,15 +43,27 @@
 .example__img {
   margin: 0 auto;
   margin-top: 34px;
+  padding-bottom: 35px;
 
   display: block;
+  text-align: center;
 }
 
 .example__switch {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 64px;
+  padding-right: 58px;
+  margin-top: 28px;
 
   text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example__switch-change {
+  display: none;
 }
 
 .example__switch-label {
@@ -67,6 +79,7 @@
   .example {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 32px;
 
     background-color: transparent;
   }
@@ -95,12 +108,82 @@
 
   .example__result-total {
     font-size: 20px;
-    padding-top: 6px;
+    padding-top: 18px;
   }
 
   .example__result-sum {
     display: block;
     text-align: right;
+    margin-top: 9px;
+  }
+
+  .example__img {
+    margin-top: 66px;
+    padding-bottom: 35px;
+    padding-left: 14px;
+
+    display: block;
+    text-align: center;
+  }
+
+  .example__switch {
+    margin-top: 15px;
+    padding-left: 54px;
+    padding-right: 70px;
+  }
+
+  .example__switch-line {
+    position: relative;
+
+    margin-bottom: 6px;
+    flex-basis: 75%;
+    height: 6px;
+
+    border-radius: 2.5px;
+    background-color: $color-border;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 30px;
+      height: 30px;
+
+      background-color: #eaeaea;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+
+      left: 50%;
+      margin-left: -12px;
+      top: -12px;
+
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: $color-green;
+      border-radius: 50%;
+
+      left: 50%;
+      margin-left: -1px;
+      top: -1px;
+
+      cursor: pointer;
+    }
+  }
+
+  .example__switch-label {
+    font-size: 20px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px dotted $color-border;
   }
 }
 
@@ -108,6 +191,9 @@
   .example {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 75px;
+
+    position: relative;
   }
 
   .example__title {
@@ -127,12 +213,26 @@
   }
 
   .example__result-total {
-    margin-top: 35px;
+    margin-top: 23px;
   }
 
   .example__result-sum {
     display: inline-block;
     vertical-align: top;
     padding-left: 59px;
+    margin-top: 0;
+  }
+
+  .example__img {
+    position: absolute;
+
+    right: -1px;
+    top: -99px;
+  }
+
+  .example__switch {
+    margin-top: 36px;
+    padding-left: 79px;
+    padding-right: 41px;
   }
 }

@@ -108,12 +108,24 @@
         </ul>
         <b class="example__result-total">Затраты на питание: <span class="example__result-sum">15 000 руб.</b>
       </div>
-      <img class="example__img" src="img/before-mobile@1x.png" alt="Пример похудевшего кота">
-      <div class="example__switch">
-        <input class="example__switch-change" type="radio" id="cat-before" name="cat-change">
-        <label class="example__switch-label" for="cat-before">Было</label>
-        <input class="example__switch-change" type="radio" id="cat-after" name="cat-change">
-        <label class="example__switch-label" for="cat-after">Стало</label>
+      <div class="example__img">
+        <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img class="example__img-before" src="img/before-mobile@1x.png" alt="Пример толстого кота">
+        </picture>
+        <picture>
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+            <img class="example__img-after visually-hidden" src="img/after-mobile@1x.png" alt="Пример похудевшего кота">
+        </picture>
+        <div class="example__switch">
+          <input class="example__switch-change" type="radio" id="cat-before" name="cat-change">
+          <label class="example__switch-label" for="cat-before">Было</label>
+          <div class="example__switch-line"></div>
+          <input class="example__switch-change" type="radio" id="cat-after" name="cat-change">
+          <label class="example__switch-label" for="cat-after">Стало</label>
+        </div>
       </div>
 
       <!-- <button class="example__before" type="button">Было</button>

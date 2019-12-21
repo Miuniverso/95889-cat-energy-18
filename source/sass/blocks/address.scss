@@ -1,3 +1,7 @@
+.address--inner {
+  background-color: $bg-light;
+}
+
 .address__text {
   display: flex;
   flex-direction: row;
@@ -26,9 +30,9 @@
   line-height: 20px;
   font-style: normal;
 
-  padding-left: 9px;
+  // padding-left: 9px;
 
-  flex-basis: 150px;
+  flex-basis: 159px;
 }
 
 .address__map {
@@ -50,7 +54,7 @@
     padding-top: 64px;
     padding-bottom: 58px;
 
-    background-color: #f2f2f2;
+    // background-color: #f2f2f2;
   }
 
   .address__title {

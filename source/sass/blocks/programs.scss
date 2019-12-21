@@ -115,7 +115,7 @@
   }
 
   .programs__description {
-    max-width: 60%;
+    max-width: 54%;
     margin: 0;
 
     padding-top: 25px;
@@ -179,7 +179,7 @@
 
     &::after {
       top: 3px;
-      left: 132px;
+      left: 127px;
     }
   }
 }
@@ -199,23 +199,22 @@
   }
 
   .programs__title {
-    padding-left: 214px;
+    padding-left: 216px;
     padding-top: 76px;
   }
 
   .programs__description {
     padding-top: 74px;
-    padding-left: 54px;
+    padding-left: 56px;
     padding-bottom: 3px;
 
     max-width: 85%;
   }
 
   .programs__item {
-    max-width: 570px;
+    flex-basis: 47%;
     padding: 0;
     padding-bottom: 59px;
-    // margin: 0 auto;
     margin-bottom: 5px;
     margin-top: -8px;
 
@@ -240,7 +239,7 @@
       width: 134px;
       height: 100px;
       top: 47px;
-      left: 34px;
+      left: 37px;
     }
 
     &--mass::after {
@@ -249,6 +248,6 @@
   }
 
   .programs__button {
-    margin-left: 52px;
+    margin-left: 54px;
   }
 }

@@ -57,15 +57,18 @@
     background-color: $bg-light;
 
     position: relative;
-    min-width: 324px;
+    // min-width: 324px;
+    width: 46%;
     box-sizing: border-box;
-    margin-bottom: 161px;
+    // margin-bottom: 161px;
+    margin-bottom: 141px;
+    padding-bottom: 40px;
   }
 
   .product__image-link {
     position: absolute;
     left: 0;
-    bottom: 280px;
+    bottom: 298px;
   }
 
   .product__image {
@@ -111,14 +114,13 @@
 
 @media (min-width: $desktop) {
   .product {
-    // margin: 0 auto;
     margin-bottom: 146px;
-
     padding-left: 19px;
     padding-right: 19px;
     padding-bottom: 37px;
 
-    min-width: 0;
+    max-width: 20%;
+    margin-left: 2px;
   }
 
   .product__wrapper {

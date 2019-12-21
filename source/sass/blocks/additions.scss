@@ -6,7 +6,8 @@
   line-height: 24px;
   padding-left: 20px;
   position: relative;
-  padding-top: 34px;
+  padding-top: 10px;
+  padding-bottom: 14px;
 
   &::before {
     position: absolute;
@@ -16,6 +17,8 @@
     background-color: $color-green;
     left: 0;
     top: 48px;
+
+    display: none;
   }
 
   &::after {
@@ -25,7 +28,7 @@
     height: 3px;
     background-color: $color-green;
     right: 0;
-    top: 48px;
+    top: 24px;
   }
 }
 
@@ -43,6 +46,8 @@
 
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 38px;
+  margin-bottom: 35px;
 }
 
 .additions__action-image {
@@ -65,26 +70,29 @@
 
 @media (min-width: $tablet) {
   .additions {
-    margin-top: -174px;
+    margin-top: -110px;
+    margin-bottom: 86px;
   }
 
   .additions__title {
     font-size: 36px;
     padding-left: 67px;
+    margin-bottom: 70px;
 
     &::before {
+      display: block;
       width: 4%;
-      top: 50px;
+      top: 25px;
     }
 
     &::after {
       width: 43%;
-      top: 50px;
+      top: 25px;
     }
   }
 
   .additions__list {
-    padding-top: 56px;
+    // padding-top: 41px;
   }
 
   .additions__action {
