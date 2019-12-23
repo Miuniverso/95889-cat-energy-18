@@ -8,28 +8,27 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 14px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 53px;
-    height: 3px;
-    background-color: $color-green;
-    left: 0;
-    top: 48px;
-
-    display: none;
-  }
+  z-index: 1;
 
   &::after {
     position: absolute;
     content: "";
-    width: 53px;
     height: 3px;
+    width: 100%;
     background-color: $color-green;
-    right: 0;
+    left: 83%;
     top: 24px;
+
+    z-index: -1;
   }
+}
+
+.additions__text {
+  background-color: $color-ligth-text;
+  padding-left: 0;
+  padding-right: 21px;
+
+  display: inline-block;
 }
 
 .additions__list {
@@ -79,16 +78,17 @@
     padding-left: 67px;
     margin-bottom: 70px;
 
-    &::before {
-      display: block;
-      width: 4%;
-      top: 25px;
-    }
-
     &::after {
-      width: 43%;
+      width: 100%;
+      left: 0;
       top: 25px;
     }
+  }
+
+  .additions__text {
+    padding-left: 39px;
+    padding-right: 34px;
+    margin-left: -5px;
   }
 
   .additions__list {
@@ -132,7 +132,7 @@
   .additions {
     position: relative;
     margin-top: -128px;
-    margin-bottom: 89px;
+    margin-bottom: 51px;
   }
 
   .additions__title {
@@ -140,29 +140,29 @@
     margin: 0;
     padding-top: 65px;
 
-    &::before {
-      width: 5%;
-      top: 81px;
-    }
-
     &::after {
-      width: 66%;
       top: 81px;
     }
   }
 
+  .additions__text {
+    margin-left: -39px;
+  }
+
+  .additions__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
   .additions__list {
-    max-width: 74%;
+    flex-basis: 71%;
     margin: 0;
     padding: 0;
     margin-top: 86px;
   }
 
   .additions__action {
-    position: absolute;
-    top: 106px;
-    right: -33px;
-
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -172,6 +172,10 @@
 
     min-height: 289px;
     box-sizing: border-box;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 86px;
   }
 
   .additions__action-image {

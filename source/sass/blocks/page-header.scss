@@ -19,8 +19,9 @@
 }
 
 .page-header__logo {
-  position: relative;
   @include link-base;
+
+  position: relative;
 }
 
 .page-header__button {
@@ -47,7 +48,6 @@
   background-image: url("../img/icon-close.svg");
   height: 18px;
   width: 18px;
-
 }
 
 @media (min-width: $tablet) {

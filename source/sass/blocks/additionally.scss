@@ -11,16 +11,27 @@
   padding-bottom: 39px;
 
   position: relative;
+  z-index: 1;
 
   &::after {
     position: absolute;
     content: "";
     height: 3px;
     background-color: $color-green;
-    width: 43%;
+    width: 47%;
     top: 42px;
     right: 0;
+    z-index: -1;
   }
+}
+
+.additionally__text {
+  background-color: $color-ligth-text;
+  padding-left: 0;
+  padding-right: 21px;
+
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .additionally__info {
@@ -89,14 +100,6 @@
   padding-bottom: 32px;
 }
 
-// @media (min-width: $tablet) {
-//   .additionally__title {
-//     font-size: 36px;
-//     margin-left: 43px;
-//   }
-// }
-
-
 @media (min-width: $tablet) {
   .additionally {
     margin-top: 41px;
@@ -106,28 +109,27 @@
     font-size: 36px;
     padding-left: 69px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 4%;
-      height: 3px;
-      top: 45px;
-      left: 0;
-      background-color: #68b738;
-    }
-
     &::after {
-      width: 58%;
+      width: 100%;
       top: 45px;
     }
   }
+
+.additionally__text {
+  padding-left: 38px;
+  padding-right: 42px;
+  display: inline-block;
+  margin-left: -3px;
+}
 
   .additionally__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3px;
-    margin-left: 51px;
-    margin-right: 44px;
+    // margin-left: 51px;
+    // margin-right: 44px;
+    padding-left: 50px;
+    padding-right: 41px;
     justify-content: space-between;
   }
 
@@ -167,7 +169,7 @@
 
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-top: 41px;
+    margin-top: 44px;
     margin-left: 70px;
     padding-left: 65px;
     padding-right: 65px;
@@ -198,21 +200,19 @@
   .additionally__title {
     padding-left: 0;
 
-    &::before {
-      width: 5%;
-    }
-
     &::after {
-      width: 75%;
+      top: 44px;
     }
+  }
+
+  .additionally__text {
+    margin-left: -39px;
   }
 
   .additionally__list {
     flex-wrap: nowrap;
-
-    margin: 0;
-    // margin-left: 91px;
-    // margin-right: 50px;
+    padding-left: 42px;
+    margin-top: 0;
   }
 
   .additionally__info {
