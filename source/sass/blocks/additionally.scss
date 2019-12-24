@@ -45,6 +45,10 @@
   position: relative;
 
   padding-left: 66px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .additionally__data:checked,
@@ -64,6 +68,12 @@
   background-color: $color-ligth-text;
 }
 
+.additionally__data:checked:hover + label::before,
+.additionally__data:not(:checked):hover + label::before {
+  border: 1px solid #bababa;
+}
+
+
 .additionally__data:checked + label::after {
   content: "";
   position: absolute;
@@ -75,6 +85,11 @@
   height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+.additionally__data:checked:active + label::before,
+.additionally__data:checked:active + label::after {
+  opacity: 0.3;
 }
 
 .additionally__button {

@@ -37,6 +37,19 @@
   height: 19px;
 }
 
+.social__link:hover .social__link--vk,
+.social__link:hover .social__link--instagram,
+.social__link:hover .social__link--facebook {
+  fill: $color-green;
+}
+
+.social__link:active .social__link--vk,
+.social__link:active .social__link--instagram,
+.social__link:active .social__link--facebook {
+  fill: $color-green;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .social {
     border: none;

@@ -212,6 +212,10 @@
       top: -12px;
 
       cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
     }
 
     &::after {
@@ -229,18 +233,26 @@
       top: -1px;
 
       cursor: pointer;
-    }
-  }
+     }
+   }
+ }
 
   .example__switch-label {
     font-size: 20px;
+
+    &:hover .example__switch-label-text {
+      border-bottom: 1px solid rgba(134, 134, 134, 0.4);
+    }
+
+    &:active .example__switch-label-text {
+      border-bottom: none;
+    }
   }
 
   .example__switch-label-text {
     padding-bottom: 1px;
     border-bottom: 1px dotted #cdcdcd;
   }
-}
 
 @media (min-width: $desktop) {
   .example {
@@ -299,7 +311,7 @@
     position: absolute;
     width: 45%;
     right: -7px;
-    bottom: 73px;
+    bottom: 69px;
     margin-left: 40px;
     margin-right: 40px;
   }

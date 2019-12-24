@@ -26,8 +26,19 @@
 
   padding-top: 12px;
   padding-bottom: 12px;
-  flex-grow: 1;
+  // flex-grow: 1;
   margin-right: 20px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+  }
 
   &[placeholder] {
     color: $color-small-text;

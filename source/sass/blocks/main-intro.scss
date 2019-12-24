@@ -49,9 +49,16 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  // margin: 0 auto;
   display: inline-block;
   vertical-align: top;
+
+  &:hover {
+    background-color: $color-green-darker;
+  }
+
+  &:active {
+    color: $color-white-lighter;
+  }
 }
 
 @media (min-width: $tablet) {

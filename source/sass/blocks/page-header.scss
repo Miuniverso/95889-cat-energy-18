@@ -22,6 +22,14 @@
   @include link-base;
 
   position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__button {

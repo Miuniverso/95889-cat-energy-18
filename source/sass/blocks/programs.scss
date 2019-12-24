@@ -90,6 +90,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  &:active {
+    color: $color-black-lighter;
+  }
+
   &::after {
     content: "";
     position: absolute;

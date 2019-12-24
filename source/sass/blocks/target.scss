@@ -15,6 +15,10 @@
   padding-left: 46px;
 
   position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .target__data:checked,
@@ -36,6 +40,11 @@
   border-radius: 100%;
 }
 
+.target__data:checked:hover + label::before,
+.target__data:not(:checked):hover + label::before {
+  border: 1px solid #bababa;
+}
+
 .target__data:checked + label::after {
   content: "";
   position: absolute;
@@ -47,6 +56,12 @@
   background-color: $color-green;
   border-radius: 100%;
 }
+
+.target__data:checked:active + label::before,
+.target__data:checked:active + label::after {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet) {
   .target {
