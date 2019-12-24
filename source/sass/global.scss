@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -21,6 +22,7 @@ body {
 @media (min-width: $tablet) {
   .container {
     width: $tablet;
+    // outline: 1px solid blue;
   }
 }
 
@@ -29,5 +31,6 @@ body {
     width: $desktop;
     padding-left: 40px;
     padding-right: 40px;
+    outline: 1px solid;
   }
 }

@@ -1,5 +1,6 @@
 .example {
   background-color: $bg-light;
+  padding-bottom: 34px;
 }
 
 .example__title {
@@ -54,20 +55,50 @@
 .example__img-after {
   position: absolute;
   left: 0;
+  display: none;
 }
 
 .example__switch {
-  padding-left: 64px;
-  padding-right: 58px;
-  margin-top: 28px;
+  margin: 0 auto;
+  margin-top: -8px;
+  padding-left: 9px;
+  padding-right: 5px;
 
-  text-align: center;
+  max-width: 67%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
+.example__switch-line {
+  position: relative;
+
+  margin-bottom: 2px;
+  flex-basis: 38%;
+  height: 12px;
+
+  border-radius: 6px;
+
+  border: solid 1px $color-border;
+  background-color: $color-ligth-text;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $color-green;
+
+    cursor: pointer;
+  }
+}
+
 
 .example__switch-label {
   color: $color-big-text;
@@ -77,16 +108,17 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 @media (min-width: $tablet) {
   .example {
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 32px;
+    padding-bottom: 73px;
 
     background-color: transparent;
   }
@@ -129,19 +161,29 @@
     padding-bottom: 35px;
     padding-left: 14px;
 
-    display: block;
-    text-align: center;
+    display: flex;
+  }
+
+  .example__img-before-wrapper {
+    width: 49%;
+    overflow: hidden;
+    background-color: white;
   }
 
   .example__img-after {
+    z-index: -1;
     position: absolute;
-    left: 70px;
+    left: 13px;
+    display: block;
   }
 
   .example__switch {
-    margin-top: 15px;
-    padding-left: 54px;
-    padding-right: 70px;
+    margin: 0 auto;
+    margin-top: -21px;
+    padding-left: 0;
+    padding-right: 0;
+
+    max-width: 82%;
   }
 
   .example__switch-line {
@@ -192,10 +234,11 @@
 
   .example__switch-label {
     font-size: 20px;
+  }
 
-    padding-bottom: 6px;
-
-    border-bottom: 1px dotted $color-border;
+  .example__switch-label-text {
+    padding-bottom: 1px;
+    border-bottom: 1px dotted #cdcdcd;
   }
 }
 
@@ -242,9 +285,22 @@
     top: -99px;
   }
 
+  .example__img-before-wrapper {
+    width: 53%;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .example__img-after {
+    left: 13px;
+  }
+
   .example__switch {
-    margin-top: 36px;
-    padding-left: 79px;
-    padding-right: 41px;
+    position: absolute;
+    width: 45%;
+    right: -7px;
+    bottom: 73px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }

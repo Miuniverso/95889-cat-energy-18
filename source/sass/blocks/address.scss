@@ -22,6 +22,10 @@
   flex-basis: 100px;
 }
 
+.address__title--break {
+  display: none;
+}
+
 .address__coordinates {
   color: $color-small-text;
   font-family: $font-secondary;
@@ -60,7 +64,12 @@
   .address__title {
     font-size: 20px;
     line-height: 25px;
-    max-width: 25%;
+    max-width: 35%;
+    flex-basis: auto;
+  }
+
+  .address__title--break {
+    display: block;
   }
 
   .address__coordinates {
@@ -85,18 +94,21 @@
     position: relative;
   }
 
+  .address__wrapper {
+    position: relative;
+  }
+
   .address__text {
     position: absolute;
     z-index: 2;
     background-color: white;
-    top: 98px;
-    left: 111px;
+    top: 95px;
+    left: 41px;
     max-width: 570px;
     box-sizing: border-box;
-
-    padding-left: 76px;
-    padding-right: 92px;
-    padding-top: 61px;
+    padding-left: 75px;
+    padding-right: 86px;
+    padding-top: 64px;
     padding-bottom: 57px;
     text-align: left;
   }
@@ -107,5 +119,6 @@
 
   .address__coordinates {
     max-width: 45%;
+    text-align: left;
   }
 }

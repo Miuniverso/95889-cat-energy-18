@@ -115,19 +115,20 @@
     }
   }
 
-.additionally__text {
-  padding-left: 38px;
-  padding-right: 42px;
-  display: inline-block;
-  margin-left: -3px;
-}
+  .additionally__text {
+    // padding: 0;
+    // padding-left: 39px;
+    // padding-right: 42px;
+    // margin-left: -4px;
+
+    margin: 0;
+    padding: 0;
+  }
 
   .additionally__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3px;
-    // margin-left: 51px;
-    // margin-right: 44px;
     padding-left: 50px;
     padding-right: 41px;
     justify-content: space-between;

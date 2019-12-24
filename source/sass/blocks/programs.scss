@@ -129,6 +129,10 @@
     }
   }
 
+  .programs__item--slim .programs__description {
+    max-width: 60%;
+  }
+
   .programs__list {
     margin-top: 31px;
   }
@@ -208,6 +212,10 @@
     padding-left: 56px;
     padding-bottom: 3px;
 
+    max-width: 85%;
+  }
+
+  .programs__item--slim .programs__description {
     max-width: 85%;
   }
 
