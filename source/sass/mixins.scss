@@ -36,8 +36,11 @@
 
   &:active {
     border: 2px solid #444444;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  &:active[placeholder] {
     padding-left: 15px;
   }
 
