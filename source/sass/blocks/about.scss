@@ -74,6 +74,10 @@
     left: 20px;
     top: -2px;
   }
+
+  &--break {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -188,7 +192,27 @@
   }
 
   .about__item {
-    margin-right: -21px;
-    flex-basis: 20%;
+    margin-right: -32px;
+    flex-basis: 21%;
+    padding-top: 111px;
+
+    &--composition {
+      background-position: 62% top;
+    }
+
+    &--type {
+      background-position: 74% top;
+    }
+
+    &--period {
+      background-position: 76% top;
+    }
+
+    &--changes {
+      background-position: 80% top;
+    }
+    &--break {
+      display: block;
+    }
   }
 }

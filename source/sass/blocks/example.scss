@@ -5,10 +5,7 @@
 
 .example__title {
   margin: 0;
-  padding: 0;
-  padding-top: 21px;
-  padding-left: 20px;
-
+  padding: 21px 0 0 20px;
   color: $color-big-text;
   font-family: $font-primary;
   font-size: 36px;
@@ -21,7 +18,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-
   padding-top: 23px;
   margin: 0;
   padding-left: 20px;
@@ -35,20 +31,16 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-
   padding-top: 3px;
   display: block;
   text-align: center;
 }
 
 .example__img {
-  margin: 0 auto;
-  margin-top: 34px;
+  margin: 34px auto 0;
   padding-bottom: 35px;
-
   display: block;
   position: relative;
-
   text-align: center;
 }
 
@@ -59,13 +51,10 @@
 }
 
 .example__switch {
-  margin: 0 auto;
-  margin-top: -8px;
+  margin: -8px auto 0;
   padding-left: 9px;
   padding-right: 5px;
-
   max-width: 67%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,13 +63,10 @@
 
 .example__switch-line {
   position: relative;
-
   margin-bottom: 2px;
   flex-basis: 38%;
   height: 12px;
-
   border-radius: 6px;
-
   border: solid 1px $color-border;
   background-color: $color-ligth-text;
 
@@ -89,16 +75,13 @@
     position: absolute;
     top: 3px;
     left: 5px;
-
     width: 35px;
     height: 6px;
     border-radius: 3px;
     background-color: $color-green;
-
     cursor: pointer;
   }
 }
-
 
 .example__switch-label {
   color: $color-big-text;
@@ -107,9 +90,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-
   cursor: pointer;
-
   border: none;
   background-color: transparent;
 }
@@ -119,7 +100,6 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 73px;
-
     background-color: transparent;
   }
 
@@ -141,7 +121,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     margin-top: 15px;
   }
 
@@ -160,7 +139,6 @@
     margin-top: 66px;
     padding-bottom: 35px;
     padding-left: 14px;
-
     display: flex;
   }
 
@@ -178,39 +156,31 @@
   }
 
   .example__switch {
-    margin: 0 auto;
-    margin-top: -21px;
+    margin: -21px auto 0;
     padding-left: 0;
     padding-right: 0;
-
     max-width: 82%;
   }
 
   .example__switch-line {
     position: relative;
-
     margin-bottom: 6px;
     flex-basis: 75%;
     height: 6px;
-
     border-radius: 2.5px;
     background-color: $color-border;
 
     &::before {
       content: "";
       position: absolute;
-
       width: 30px;
       height: 30px;
-
       background-color: #eaeaea;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       border-radius: 50%;
-
       left: 50%;
       margin-left: -12px;
       top: -12px;
-
       cursor: pointer;
 
       &:hover {
@@ -221,21 +191,16 @@
     &::after {
       content: "";
       position: absolute;
-
       width: 8px;
       height: 8px;
-
       background-color: $color-green;
       border-radius: 50%;
-
       left: 50%;
       margin-left: -1px;
       top: -1px;
-
       cursor: pointer;
-     }
-   }
- }
+    }
+  }
 
   .example__switch-label {
     font-size: 20px;
@@ -253,13 +218,13 @@
     padding-bottom: 1px;
     border-bottom: 1px dotted #cdcdcd;
   }
+}
 
 @media (min-width: $desktop) {
   .example {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 75px;
-
     position: relative;
   }
 
@@ -292,7 +257,6 @@
 
   .example__img {
     position: absolute;
-
     right: -1px;
     top: -99px;
   }
