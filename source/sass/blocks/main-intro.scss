@@ -1,9 +1,20 @@
-.main-intro {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+// .main-intro {
+//   background-image: url("../img/index-background-mobile@1x.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center 0;
+//
+//   text-align: center;
+// }
 
-  text-align: center;
+.main-intro::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  z-index: -1;
+  left: 0;
+  right: 0;
+  height: 305px;
+  background-position-x: center;
 }
 
 .main-intro__title {
@@ -66,6 +77,10 @@
     background-image: none;
     text-align: center;
     position: relative;
+
+    &::before {
+      display: none;
+    }
   }
 
   .main-intro__title {
@@ -120,21 +135,22 @@
 @media (min-width: $desktop) {
   .main-intro {
     position: static;
-  }
 
-  .main-intro::before {
+    &::before {
     content: "";
     position: absolute;
+    display: block;
     top: 0;
-    // right: 0;
+    right: 0;
     left: 50%;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
 
-    width: 720px;
+    // width: 720px;
     height: 696px;
 
     z-index: -1;
+    }
   }
 
   .main-intro__title {

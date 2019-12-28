@@ -228,6 +228,10 @@
     position: relative;
   }
 
+  .example__wrapper {
+    position: relative;
+  }
+
   .example__title {
     margin-top: -2px;
     margin-bottom: 76px;
@@ -275,7 +279,7 @@
     position: absolute;
     width: 45%;
     right: -7px;
-    bottom: 69px;
+    // bottom: 69px;
     margin-left: 40px;
     margin-right: 40px;
   }

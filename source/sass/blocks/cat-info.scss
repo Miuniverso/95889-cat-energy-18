@@ -17,6 +17,8 @@
 
 .cat-info__data {
   @include input;
+
+  flex-grow: 1;
 }
 
 @media (min-width: $tablet) {
