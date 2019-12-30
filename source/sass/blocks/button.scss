@@ -16,6 +16,14 @@
   text-align: center;
 
   margin-top: -3px;
+
+  &:hover {
+    background-color: $color-green-darker;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--show {
@@ -33,6 +41,15 @@
   background-color: $bg-light;
 
   margin-top: 21px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet) {
@@ -65,10 +82,5 @@
   .button--show {
     margin-left: 37px;
     margin-right: 37px;
-    // margin-top: 88px;
-    // padding-left: 0;
-    // padding-right: 0;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
   }
 }

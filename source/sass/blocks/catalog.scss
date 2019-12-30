@@ -31,7 +31,7 @@
     width: 30px;
     height: 30px;
 
-    top: 16px;
+    top: 26px;
     left: 145px;
   }
 }
@@ -43,6 +43,14 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 9px;
+
+  &--break {
+    display: none;
+  }
 }
 
 .catalog-main__more-small-title {
@@ -86,7 +94,7 @@
       height: 61px;
 
       opacity: 0.2;
-      top: 52px;
+      top: 55px;
       left: 40%;
     }
   }
@@ -95,8 +103,13 @@
     font-size: 20px;
     display: block;
 
-    margin-top: 92px;
-    padding-bottom: 39px;
+    // margin-top: 92px;
+    // padding-bottom: 39px;
+    padding-top: 96px;
+
+    &--break {
+      display: block;
+    }
   }
 
   .catalog-main__more-small-title {
@@ -129,6 +142,7 @@
 
     &::before {
       left: 92px;
+      top: 50px;
     }
   }
 
@@ -136,10 +150,10 @@
     font-size: 20px;
     display: block;
 
-    margin-top: 161px;
+    padding-top: 161px;
   }
 
   .catalog-main__more-small-title {
-    margin-top: -11px;
+    margin-top: 27px;
   }
 }

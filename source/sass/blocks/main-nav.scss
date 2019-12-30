@@ -24,6 +24,10 @@
 }
 
 @media (min-width: $tablet) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
@@ -37,6 +41,14 @@
     line-height: 24px;
 
     padding-bottom: 7px;
+
+    &:hover {
+      color: $color-black-lighter;
+    }
+
+    &:active {
+      color: $color-black-light;
+    }
   }
 
   .main-nav__item-link--current {
@@ -58,6 +70,14 @@
     padding-bottom: 6px;
 
     color: $color-ligth-text;
+
+    &:hover {
+      color: $color-white-light;
+    }
+
+    &:active {
+      color: $color-white-lighter;
+    }
   }
 
   .main-nav__item-link--current {

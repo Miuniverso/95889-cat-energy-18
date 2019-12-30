@@ -18,6 +18,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Кэт энерджи">
       </picture>
       </a>
+      <button class="page-header__button visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="main-nav inner-nav">
       <ul class="main-nav__list">
@@ -283,64 +284,73 @@
       </ul>
     </section>
 
-    <section class="additions container">
-      <h2 class="additions__title">Дополнительные товары</h2>
-      <ul class="additions__list">
-        <li class="additions__item addition">
-          <h3 class="addition__title">Сахарозаменитель</h3>
-          <table class="addition__info">
-            <tbody class="addition__info-wrapper">
+    <section class="additions">
+      <h2 class="additions__title">
+        <span class="additions__container container">
+          <span class="additions__text">Дополнительные товары</span>
+        </span>
+      </h2>
+      <div class="additions__wrapper container">
+        <ul class="additions__list">
+          <li class="additions__item addition">
+            <h3 class="addition__title">Сахарозаменитель</h3>
+            <table class="addition__info">
+              <tbody class="addition__info-wrapper">
+                <tr class="addition__info-string">
+                  <td class="addition__mark">1 упаковка (100 г)</td>
+                  <td class="addition__definition">200 Р.</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="addition__button button--action button" href="#">Заказать</a>
+          </li>
+          <li class="additions__item addition">
+            <h3 class="addition__title">Питьевая вода</h3>
+            <table class="addition__info">
               <tr class="addition__info-string">
-                <td class="addition__mark">1 упаковка (100 г)</td>
-                <td class="addition__definition">200 Р.</td>
+                <td class="addition__mark">5 литров</td>
+                <td class="addition__definition">50 Р.</td>
               </tr>
-            </tbody>
-          </table>
-          <a class="addition__button button--action button" href="#">Заказать</a>
-        </li>
-        <li class="additions__item addition">
-          <h3 class="addition__title">Питьевая вода</h3>
-          <table class="addition__info">
-            <tr>
-              <td class="addition__mark">5 литров</td>
-              <td class="addition__definition">50 Р.</td>
-            </tr>
-          </table>
-          <a class="addition__button button--action button" href="#">Заказать</a>
-        </li>
-        <li class="additions__item addition">
-          <h3 class="addition__title">Молоко</h3>
-          <table class="addition__info">
-            <tr>
-              <td class="addition__mark">1 литр</td>
-              <td class="addition__definition">100 Р.</td>
-            </tr>
-          </table>
-          <a class="addition__button button--action button" href="#">Заказать</a>
-        </li>
-        <li class="additions__item addition">
-          <h3 class="addition__title">Витамины</h3>
-          <table class="addition__info">
-            <tr>
-              <td class="addition__mark">1 упаковка (30 г)</td>
-              <td class="addition__definition">300 Р.</td>
-            </tr>
-          </table>
-          <a class="addition__button button--action button" href="#">Заказать</a>
-        </li>
-      </ul>
-      <div class="additions__action">
-        <img class="additions__action-image" src="img/icon-gift.svg" alt="">
-        <p class="additions__action-description">Закажите все<br>и получите чехол для<br> кота в подарок!</p>
+            </table>
+            <a class="addition__button button--action button" href="#">Заказать</a>
+          </li>
+          <li class="additions__item addition">
+            <h3 class="addition__title">Молоко</h3>
+            <table class="addition__info">
+              <tr class="addition__info-string">
+                <td class="addition__mark">1 литр</td>
+                <td class="addition__definition">100 Р.</td>
+              </tr>
+            </table>
+            <a class="addition__button button--action button" href="#">Заказать</a>
+          </li>
+          <li class="additions__item addition">
+            <h3 class="addition__title">Витамины</h3>
+            <table class="addition__info">
+              <tr class="addition__info-string">
+                <td class="addition__mark">1 упаковка (30 г)</td>
+                <td class="addition__definition">300 Р.</td>
+              </tr>
+            </table>
+            <a class="addition__button button--action button" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="additions__action">
+          <img class="additions__action-image" src="img/icon-gift.svg" alt="">
+          <p class="additions__action-description">Закажите все<br>и получите чехол для<br> кота в подарок!</p>
+        </div>
       </div>
+
     </section>
     <section class="address address--inner">
       <h2 class="visually-hidden">Адрес магазина Cat Energy</h2>
-      <div class="address__text container">
-        <b class="address__title">приглашаем к сотрудничеству дилеров!</b>
-        <address class="address__coordinates">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <div class="address__wrapper container">
+        <div class="address__text">
+          <b class="address__title">приглашаем <br class="address__title--break">к сотрудничеству дилеров!</b>
+          <address class="address__coordinates">
+            ул. Большая Конюшенная, д. 19/8 <span class="address__coordinates-city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="address__map" id="map"></div>
     </section>

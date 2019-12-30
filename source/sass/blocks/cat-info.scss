@@ -17,6 +17,8 @@
 
 .cat-info__data {
   @include input;
+
+  flex-grow: 1;
 }
 
 @media (min-width: $tablet) {
@@ -27,7 +29,7 @@
   .cat-info__label {
     font-size: 20px;
     padding-right: 18px;
-    padding-left: 0;
+    padding-left: 21px;
   }
 
   .cat-info__data {
@@ -37,5 +39,15 @@
     &[placeholder] {
       font-size: 20px;
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .cat-info__label {
+    padding-left: 2px;
+  }
+
+  .cat-info__data {
+    margin-right: 13px;
   }
 }

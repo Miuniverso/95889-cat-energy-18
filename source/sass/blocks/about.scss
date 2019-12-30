@@ -74,6 +74,10 @@
     left: 20px;
     top: -2px;
   }
+
+  &--break {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -84,7 +88,7 @@
 
   .about__title {
     font-size: 60px;
-    margin-top: 69px;
+    margin-top: 45px;
     padding-left: 0;
   }
 
@@ -98,12 +102,12 @@
     font-size: 16px;
     line-height: 24px;
 
-    max-width: 245px;
+    flex-basis: 35%;
 
     padding-left: 0;
     padding-top: 109px;
     padding-bottom: 92px;
-    margin-right: 59px;
+    margin-right: 56px;
     margin-top: 44px;
 
     &--composition {
@@ -188,6 +192,28 @@
   }
 
   .about__item {
-    margin-right: -21px;
+    margin-right: -32px;
+    flex-basis: 21%;
+    padding-top: 111px;
+
+    &--composition {
+      background-position: 62% top;
+    }
+
+    &--type {
+      background-position: 74% top;
+    }
+
+    &--period {
+      background-position: 76% top;
+    }
+
+    &--changes {
+      background-position: 80% top;
+    }
+
+    &--break {
+      display: block;
+    }
   }
 }

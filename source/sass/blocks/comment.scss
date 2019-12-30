@@ -11,6 +11,7 @@
   padding-bottom: 35px;
 
   position: relative;
+  z-index: 1;
 
   &::after {
     position: absolute;
@@ -20,7 +21,17 @@
     width: 50%;
     top: 28px;
     right: 0;
+    z-index: -1;
   }
+}
+
+.comment__text {
+  background-color: $color-ligth-text;
+  padding-left: 0;
+  padding-right: 21px;
+
+  display: inline-block;
+  // margin-left: 10px;
 }
 
 .comment__wrapper {
@@ -28,7 +39,6 @@
 }
 
 .comment__area {
-  // display: block;
   flex-grow: 1;
   min-height: 124px;
   border: 1px solid $color-border;
@@ -44,7 +54,7 @@
     line-height: 18px;
     text-transform: uppercase;
     padding-left: 14px;
-    padding-right: 20px;
+    padding-right: 13px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -59,20 +69,17 @@
     font-size: 36px;
     padding-left: 69px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      height: 3px;
-      background-color: $color-green;
-      width: 4%;
-      top: 30px;
-      left: 0;
-    }
-
     &::after {
-      width: 62%;
+      z-index: -1;
+      width: 100%;
       top: 30px;
     }
+  }
+
+  .comment__text {
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-left: -39px;
   }
 
   .comment__wrapper {
@@ -101,14 +108,10 @@
 
   .comment__title {
     padding-left: 0;
+  }
 
-    &::before {
-      width: 5%;
-    }
-
-    &::after {
-      width: 77%;
-    }
+  .comment__text {
+    margin-left: -40px;
   }
 
   .comment__area {
