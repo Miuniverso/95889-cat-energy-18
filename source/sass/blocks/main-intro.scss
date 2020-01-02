@@ -1,10 +1,6 @@
-// .main-intro {
-//   background-image: url("../img/index-background-mobile@1x.jpg");
-//   background-repeat: no-repeat;
-//   background-position: center 0;
-//
-//   text-align: center;
-// }
+.main-intro {
+  text-align: center;
+}
 
 .main-intro::before {
   content: "";
@@ -15,6 +11,11 @@
   right: 0;
   height: 305px;
   background-position-x: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px 306px;
+  }
 }
 
 .main-intro__title {
@@ -103,6 +104,8 @@
   .main-intro__image {
     padding-top: 20px;
     margin-bottom: -34px;
+    width: 709px;
+    height: 609px;
   }
 
   .main-intro__button {
@@ -128,10 +131,13 @@
       right: 0;
       left: 50%;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      // background-repeat: no-repeat;
-      // width: 720px;
       height: 696px;
       z-index: -1;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px 696px;
+      }
     }
   }
 
@@ -149,6 +155,8 @@
     display: inline-block;
     margin-top: -282px;
     margin-left: 232px;
+    width: 552px;
+    height: 499px;
   }
 
   .main-intro__button {

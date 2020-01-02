@@ -24,23 +24,47 @@
   &--slim::before {
     content: "";
     position: absolute;
-    background-image: url("../img/cat-slim.png");
+    background-color: $color-green;
     background-repeat: no-repeat;
+    border-radius: 50%;
     width: 50px;
-    height: 53px;
+    height: 49px;
     left: 22px;
-    top: 22px;
+    top: 25px;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 49px;
+    left: 30px;
+    top: 23px;
   }
 
   &--mass::before {
     content: "";
     position: absolute;
-    background-image: url("../img/cat-mass.png");
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 22px;
+    top: 24px;
+  }
+
+  &--mass::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     width: 67px;
     height: 50px;
     left: 13px;
-    top: 24px;
+    top: 35px;
   }
 }
 
@@ -144,39 +168,37 @@
   .programs__item {
     padding-top: 76px;
     padding-left: 54px;
-    // padding-right: 21px;
-    // margin-bottom: 20px;
     padding-bottom: 59px;
     margin-bottom: 30px;
 
     &--slim::before {
-      display: none;
+      width: 200px;
+      height: 200px;
+      right: 0;
+      top: 92px;
+      left: 446px;
     }
 
     &--slim::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/cat-slim-tablet.png");
-      background-repeat: no-repeat;
-      width: 200px;
-      height: 212px;
+      width: 141px;
+      height: 194px;
       top: 80px;
-      right: 62px;
+      left: 476px;
     }
 
     &--mass::before {
-      display: none;
+      width: 200px;
+      height: 200px;
+      right: 0;
+      top: 91px;
+      left: 448px;
     }
 
     &--mass::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/cat-mass-tablet.png");
-      background-repeat: no-repeat;
       width: 268px;
       height: 200px;
-      right: 28px;
-      top: 91px;
+      top: 135px;
+      left: 412px;
     }
   }
 
@@ -231,31 +253,31 @@
     margin-top: -8px;
 
     &--slim::before {
-      display: block;
-      background-image: url("../img/cat-slim-desktop.png");
-      background-repeat: no-repeat;
       width: 100px;
-      height: 106px;
-      top: 41px;
+      height: 101px;
+      top: 46px;
       left: 52px;
     }
 
     &--slim::after {
-      display: none;
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      left: 66px;
     }
 
     &--mass::before {
-      display: block;
-      background-image: url("../img/cat-mass-desktop.png");
-      background-repeat: no-repeat;
-      width: 134px;
+      width: 100px;
       height: 100px;
       top: 47px;
-      left: 37px;
+      left: 55px;
     }
 
     &--mass::after {
-      display: none;
+      width: 134px;
+      height: 57px;
+      top: 69px;
+      left: 37px;
     }
   }
 
