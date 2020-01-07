@@ -110,10 +110,27 @@
     margin-right: 56px;
     margin-top: 44px;
 
+    &--break {
+      display: block;
+    }
+
+    &::after {
+      position: absolute;
+      counter-increment: section;
+      content: counter(section);
+      font-size: 281px;
+      top: 88px;
+      right: 20px;
+
+      font-family: $font-primary;
+      color: $bg-light;
+      z-index: -1;
+    }
+
     &--composition {
-      background: url("../img/1.png");
-      background-repeat: no-repeat;
-      background-position: 65% top;
+      // background: url("../img/1.png");
+      // background-repeat: no-repeat;
+      // background-position: 65% top;
 
       &::before {
         position: absolute;
@@ -124,12 +141,16 @@
         height: 80px;
         left: 0;
       }
+
+      &::after {
+        left: 118px;
+      }
     }
 
     &--type {
-      background: url("../img/2.png");
-      background-repeat: no-repeat;
-      background-position: 80% top;
+      // background: url("../img/2.png");
+      // background-repeat: no-repeat;
+      // background-position: 80% top;
 
       &::before {
         position: absolute;
@@ -143,9 +164,9 @@
     }
 
     &--period {
-      background: url("../img/3.png");
-      background-repeat: no-repeat;
-      background-position: 80% top;
+      // background: url("../img/3.png");
+      // background-repeat: no-repeat;
+      // background-position: 80% top;
 
       &::before {
         position: absolute;
@@ -159,9 +180,9 @@
     }
 
     &--changes {
-      background: url("../img/4.png");
-      background-repeat: no-repeat;
-      background-position: 86% top;
+      // background: url("../img/4.png");
+      // background-repeat: no-repeat;
+      // background-position: 86% top;
 
       &::before {
         position: absolute;
@@ -196,24 +217,8 @@
     flex-basis: 21%;
     padding-top: 111px;
 
-    &--composition {
-      background-position: 62% top;
-    }
-
-    &--type {
-      background-position: 74% top;
-    }
-
-    &--period {
-      background-position: 76% top;
-    }
-
-    &--changes {
-      background-position: 80% top;
-    }
-
-    &--break {
-      display: block;
+    &::after {
+      right: 30px;
     }
   }
 }

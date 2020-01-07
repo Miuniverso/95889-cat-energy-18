@@ -37,11 +37,17 @@
 }
 
 .example__img {
+  padding: 0;
   margin: 34px auto 0;
   padding-bottom: 35px;
   display: block;
   position: relative;
   text-align: center;
+}
+
+.example__img-before-wrapper,
+.example__img-after-wrapper {
+  list-style: none;
 }
 
 .example__img-after {
