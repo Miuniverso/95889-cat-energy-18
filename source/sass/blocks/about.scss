@@ -4,7 +4,6 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-
   // padding-left: 22px;
   margin: 0;
   // padding-top: -4px;
@@ -14,19 +13,16 @@
 
 .about__list {
   list-style: none;
-  padding: 0;
-  padding-top: 14px;
+  padding: 14px 0 0;
 }
 
 .about__item {
   position: relative;
-
   color: $color-small-text;
   font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-
   padding-right: 20px;
   padding-left: 100px;
   padding-bottom: 26px;
@@ -34,45 +30,73 @@
   &--composition::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-composition.png");
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-color: $color-green;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     left: 20px;
     top: -2px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
   &--type::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-type.png");
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-color: $color-green;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     left: 20px;
     top: -2px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
   &--period::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-period.png");
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-color: $color-green;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     left: 20px;
     top: -2px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
   &--changes::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-changes.png");
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-color: $color-green;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     left: 20px;
     top: -2px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
   &--break {
@@ -101,9 +125,7 @@
   .about__item {
     font-size: 16px;
     line-height: 24px;
-
     flex-basis: 35%;
-
     padding-left: 0;
     padding-top: 109px;
     padding-bottom: 92px;
@@ -121,78 +143,37 @@
       font-size: 281px;
       top: 88px;
       right: 20px;
-
       font-family: $font-primary;
       color: $bg-light;
       z-index: -1;
     }
 
-    &--composition {
-      // background: url("../img/1.png");
-      // background-repeat: no-repeat;
-      // background-position: 65% top;
-
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-composition-tablet.png");
-        background-repeat: no-repeat;
-        width: 80px;
-        height: 80px;
-        left: 0;
-      }
-
-      &::after {
-        left: 118px;
-      }
+    &--composition::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
 
-    &--type {
-      // background: url("../img/2.png");
-      // background-repeat: no-repeat;
-      // background-position: 80% top;
-
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-type-tablet.png");
-        background-repeat: no-repeat;
-        height: 80px;
-        width: 80px;
-        left: 0;
-      }
+    &--composition::after {
+      left: 118px;
     }
 
-    &--period {
-      // background: url("../img/3.png");
-      // background-repeat: no-repeat;
-      // background-position: 80% top;
-
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-period-tablet.png");
-        background-repeat: no-repeat;
-        width: 80px;
-        height: 80px;
-        left: 0;
-      }
+    &--type::before {
+      height: 80px;
+      width: 80px;
+      left: 0;
     }
 
-    &--changes {
-      // background: url("../img/4.png");
-      // background-repeat: no-repeat;
-      // background-position: 86% top;
+    &--period::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+    }
 
-      &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/icon-changes-tablet.png");
-        background-repeat: no-repeat;
-        width: 80px;
-        height: 80px;
-        left: 0;
-      }
+    &--changes::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
   }
 }
