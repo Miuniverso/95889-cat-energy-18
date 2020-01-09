@@ -60,6 +60,15 @@
     padding-left: 10px;
     padding-right: 10px;
 
-    background-color: $color-ligth-text;
+    background-color: white;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  // что за цвет получается по итогу??
+
+  .indicator__description {
+    background-color: #efefef;
   }
 }

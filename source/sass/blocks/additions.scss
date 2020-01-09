@@ -40,6 +40,7 @@
 
 .additions__action {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $color-green;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -47,6 +48,11 @@
   margin-right: 20px;
   margin-top: 38px;
   margin-bottom: 35px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px 290px;
+  }
 }
 
 .additions__action-image {
@@ -105,6 +111,11 @@
     margin-top: 69px;
 
     max-height: 200px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 
   .additions__action-image {
@@ -176,6 +187,11 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 86px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 292px;
+    }
   }
 
   .additions__action-image {

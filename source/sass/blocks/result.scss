@@ -7,10 +7,9 @@
   padding-top: 9px;
 }
 
-.result__item {
-  // margin-left: 20px;
-  // margin-right: 20px;
-}
+// .result__item {
+//
+// }
 
 @media (min-width: $tablet) {
   .result {
@@ -19,11 +18,5 @@
 
   .result__item {
     margin-right: 45px;
-
-    // max-width: 162px;
   }
 }
-
-// @media (min-width: $desktop) {
-//
-// }
