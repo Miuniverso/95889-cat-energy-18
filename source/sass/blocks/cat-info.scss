@@ -36,6 +36,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
+    &:active {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
     &[placeholder] {
       font-size: 20px;
     }
