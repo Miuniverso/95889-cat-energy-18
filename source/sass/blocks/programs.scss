@@ -36,7 +36,7 @@
   &--slim::after {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-cat-slim.svg");
+    background-image: url("../img/sprite.svg#icon-cat-slim");
     background-repeat: no-repeat;
     width: 35px;
     height: 49px;
@@ -59,7 +59,7 @@
   &--mass::after {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-cat-pro.svg");
+    background-image: url("../img/sprite.svg#icon-cat-pro");
     background-repeat: no-repeat;
     width: 67px;
     height: 50px;
@@ -117,7 +117,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("../img/sprite.svg#icon-arrow");
     background-repeat: no-repeat;
     width: 24px;
     height: 11px;
@@ -126,9 +126,8 @@
   }
 
   &:hover {
-
     &::after {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/sprite.svg#icon-arrow-long");
       width: 34px;
       height: 12px;
     }

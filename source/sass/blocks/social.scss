@@ -20,21 +20,25 @@
 
 .social__link {
   position: relative;
+  color: #666666;
 }
 
 .social__link--vk {
   width: 22px;
   height: 12px;
+  fill: #666666;
 }
 
 .social__link--instagram {
   width: 16px;
   height: 16px;
+  fill: #666666;
 }
 
 .social__link--facebook {
   width: 10px;
   height: 19px;
+  fill: #666666;
 }
 
 .social__link:hover .social__link--vk,
