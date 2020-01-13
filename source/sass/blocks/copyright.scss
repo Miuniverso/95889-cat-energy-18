@@ -19,7 +19,9 @@
   font-weight: 400;
   line-height: 16px;
 
-  &:hover path {
+  fill: #666666;
+
+  &:hover {
     fill: $color-green;
   }
 
