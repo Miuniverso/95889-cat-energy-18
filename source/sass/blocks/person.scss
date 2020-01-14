@@ -138,6 +138,8 @@
 
   .person__data {
     margin-right: 20px;
+    height: 56px;
+    box-sizing: border-box;
 
     &[placeholder] {
       font-size: 20px;

@@ -35,6 +35,8 @@
   .cat-info__data {
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 52px;
+    box-sizing: border-box;
 
     &:active {
       padding-top: 9px;
