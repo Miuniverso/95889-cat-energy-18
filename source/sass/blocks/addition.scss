@@ -118,7 +118,8 @@
   }
 
   .addition__info-string {
-    justify-content: space-between;
+    // justify-content: space-between;
+    display: table-row;
   }
 
   .addition__button {

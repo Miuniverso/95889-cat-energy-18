@@ -57,10 +57,8 @@
     background-color: $bg-light;
 
     position: relative;
-    // min-width: 324px;
     width: 46%;
     box-sizing: border-box;
-    // margin-bottom: 161px;
     margin-bottom: 141px;
     padding-bottom: 40px;
   }
@@ -105,10 +103,14 @@
     border-bottom: 1px solid $color-border;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .product__definition {
+    margin-left: auto;
   }
 }
 
@@ -142,8 +144,8 @@
   }
 
   .product__info-string {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     padding-top: 6px;
     padding-bottom: 6px;
   }
