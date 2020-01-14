@@ -28,9 +28,9 @@ ymaps.ready(function() {
 
 // Toggle mobile menu
 
-let button = document.querySelector(".page-header__button");
-let menu = document.querySelector(".main-nav");
-let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+var button = document.querySelector(".page-header__button");
+var menu = document.querySelector(".main-nav");
+var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 if (viewportWidth < 768) {
   menu.classList.add("visually-hidden");

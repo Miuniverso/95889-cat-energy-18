@@ -178,15 +178,20 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 0;
+    padding-right: 0;
 
     min-height: 289px;
     box-sizing: border-box;
 
     margin-left: 0;
-    margin-right: 0;
+    // margin-right: 0;
     margin-top: 86px;
+
+    // margin-left: 0;
+    margin-right: 40px;
+    // margin-top: 86px;
+    min-width: 245px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -195,7 +200,7 @@
   }
 
   .additions__action-image {
-    padding-left: 54px;
+    padding-left: 96px;
   }
 
   .additions__action-description {
