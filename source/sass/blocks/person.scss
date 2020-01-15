@@ -70,30 +70,16 @@
     padding-bottom: 11px;
     padding-left: 15px;
   }
+
+  &[placeholder] {
+    padding-right: 50px;
+  }
 }
 
-// не могу вставить иконки :(
-
-.person__data[type="email"]::after {
+.person_icon {
   position: absolute;
-  content: "";
-  display: block;
-  background-image: url("../img/icon-mail.svg");
-  width: 17px;
-  height: 13px;
-  // top: 0;
-  right: 30px;
-}
-
-.person__data[type="tel"]::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  right: 0;
+  right: 34px;
+  fill: $color-title;
 }
 
 @media (min-width: $tablet) {
@@ -144,6 +130,10 @@
     &[placeholder] {
       font-size: 20px;
     }
+  }
+
+  .person_icon {
+    right: 85px;
   }
 }
 
@@ -200,5 +190,9 @@
 
   .person__data {
     margin-right: 0;
+  }
+
+  .person_icon {
+    right: 20px;
   }
 }

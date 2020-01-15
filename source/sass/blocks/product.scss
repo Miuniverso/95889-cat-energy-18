@@ -99,6 +99,7 @@
     font-size: 16px;
   }
 
+  // for IE
   .product__info-string {
     border-bottom: 1px solid $color-border;
 
@@ -107,10 +108,15 @@
     // justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: relative;
   }
 
+// for IE
   .product__definition {
-    margin-left: auto;
+    // margin-left: auto;
+    position: absolute;
+    right: 0;
+
   }
 }
 

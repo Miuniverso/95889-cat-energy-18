@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement( "picture" );
+  </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
 
@@ -84,10 +87,16 @@
           <p class="person__info">
             <label class="person__label" for="person-email">E-mail:*</label>
             <input class="person__data" id="person-email" type="email" placeholder="kuklachev@gmail.com">
+            <svg class="person_icon person_icon--email" width="17" height="13" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#sp-icon-mail"></use>
+            </svg>
           </p>
           <p class="person__info">
             <label class="person__label" for="person-telephone">Телефон:*</label>
             <input class="person__data" id="person-telephone" type="tel" placeholder="8 (960) 900-60-90">
+            <svg class="person_icon person_icon--phone" aria-hidden="true" focusable="false" width="20" height="20">
+              <use xlink:href="img/sprite.svg#sp-icon-phone"></use>
+            </svg>
           </p>
         </div>
       </div>
