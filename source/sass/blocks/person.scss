@@ -78,8 +78,12 @@
 
 .person_icon {
   position: absolute;
-  right: 34px;
   fill: $color-title;
+
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 34px;
 }
 
 @media (min-width: $tablet) {
