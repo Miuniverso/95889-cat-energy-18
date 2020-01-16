@@ -42,10 +42,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   margin: 0;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 
   position: relative;
 }
