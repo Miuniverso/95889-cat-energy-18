@@ -4,13 +4,11 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-
   padding-left: 19px;
   padding-top: 28px;
   padding-bottom: 34px;
   margin: 0;
   z-index: 1;
-
   position: relative;
 
   &::after {
@@ -33,7 +31,6 @@
   background-color: $color-ligth-text;
   padding-left: 0;
   padding-right: 21px;
-
   display: inline-block;
   // margin-left: 10px;
 }
@@ -42,58 +39,87 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-
-  margin: 0;
-  padding-bottom: 15px;
-
+  flex-wrap: nowrap;
+  margin: 0 0 15px;
   position: relative;
 }
 
 .person__label {
   @include label;
-
   padding-left: 20px;
   padding-right: 11px;
 }
 
 .person__data {
   @include input;
-
   flex-grow: 1;
   position: relative;
   margin-right: 20px;
+  box-sizing: border-box;
+  // &--error {
+  //   @include input;
+  //
+  //   border: 2px solid #ff8282;
+  //   padding-top: 11px;
+  //   padding-bottom: 11px;
+  //   padding-left: 15px;
+  //
+  //   flex-grow: 1;
+  //   position: relative;
+  //   margin-right: 20px;
+  //   box-sizing: border-box;
+  //
+  //   & + .person_icon {
+  //     fill: #ff8282;
+  //   }
+  //
+  //   &[placeholder] {
+  //     font-size: 20px;
+  //     padding-right: 50px;
+  //   }
+  // }
+  &[placeholder] {
+    padding-right: 50px;
+  }
 
-  &--error {
+  &[id="person-telephone"] {
+    width: 204px;
+  }
+
+  &[id="person-email"] {
+    width: 219px;
+  }
+
+  &:active + .person_icon,
+  &:focus + .person_icon {
+    fill: $color-green;
+  }
+
+  &:active:invalid,
+  &:focus:invalid {
+    @include input;
     border: 2px solid #ff8282;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 15px;
+    flex-grow: 1;
+    position: relative;
+    margin-right: 20px;
+    box-sizing: border-box;
+
+    & + .person-icon {
+      fill: #ff8282;
+    }
   }
 }
 
-// не могу вставить иконки :(
-
-.person__data[type="email"]::after {
+.person_icon {
   position: absolute;
-  content: "";
-  display: block;
-  background-image: url("../img/icon-mail.svg");
-  width: 17px;
-  height: 13px;
-  // top: 0;
-  right: 30px;
-}
-
-.person__data[type="tel"]::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  fill: $color-title;
+  margin: auto;
   top: 0;
-  right: 0;
+  bottom: 0;
+  right: 34px;
 }
 
 @media (min-width: $tablet) {
@@ -138,10 +164,16 @@
 
   .person__data {
     margin-right: 20px;
+    height: 56px;
+    box-sizing: border-box;
 
     &[placeholder] {
       font-size: 20px;
     }
+  }
+
+  .person_icon {
+    right: 85px;
   }
 }
 
@@ -158,7 +190,6 @@
       width: 100%;
       left: 0;
       top: 44px;
-
       position: absolute;
       content: "";
       z-index: -1;
@@ -198,5 +229,9 @@
 
   .person__data {
     margin-right: 0;
+  }
+
+  .person_icon {
+    right: 20px;
   }
 }

@@ -6,7 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js"></script>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();
+  </script>
 </head>
 
 <body>
@@ -50,7 +58,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                <img class="product__image" src="img/chicken-small-mobile@1x.jpg 1x" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 500 с курицей" width="140" height="144">
+                <img class="product__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 500 с курицей" width="140" height="144">
             </picture>
             </a>
             <div class="product__description">
@@ -88,7 +96,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                <img class="product__image" src="img/chicken-big-mobile@1x.jpg 1x" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 1000 с курицей" width="140" height="144">
+                <img class="product__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 1000 с курицей" width="140" height="144">
             </picture>
             </a>
             <div class="product__description">
@@ -126,7 +134,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                <img class="product__image" src="img/fish-small-mobile@1x.jpg 1x" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 500 с рыбой" width="140" height="144">
+                <img class="product__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 500 с рыбой" width="140" height="144">
             </picture>
             </a>
           <div class="product__description">
@@ -164,7 +172,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-                <img class="product__image" src="img/fish-big-mobile@1x.jpg 1x" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 1000 с рыбой" width="140" height="144">
+                <img class="product__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Питание Cat Energy PRO 1000 с рыбой" width="140" height="144">
               </picture>
             </a>
             <div class="product__description">
@@ -202,7 +210,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-                <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg 1x" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 500 с гречкой" width="140" height="144">
+                <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 500 с гречкой" width="140" height="144">
               </picture>
             </a>
             <div class="product__description">
@@ -240,7 +248,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-                <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg 1x" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 1000 с гречкой" width="140" height="144">
+                <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 1000 с гречкой" width="140" height="144">
               </picture>
             </a>
             <div class="product__description">
@@ -278,7 +286,7 @@
 
                 <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                <img class="product__image" src="img/rice-small-mobile@1x.jpg 1x" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 500 с рисом" width="140" height="144">
+                <img class="product__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Питание Cat Energy SLIM 500 с рисом" width="140" height="144">
               </picture>
             </a>
             <div class="product__description">
