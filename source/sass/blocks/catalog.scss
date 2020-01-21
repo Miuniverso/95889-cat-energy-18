@@ -1,6 +1,5 @@
 .catalog-main__title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -17,11 +16,11 @@
 }
 
 .catalog-main__more {
+  position: relative;
+
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-
-  position: relative;
   padding-top: 70px;
 
   &::before {
@@ -30,7 +29,6 @@
     background-image: url("../img/icon-plus-mobile.svg");
     width: 30px;
     height: 30px;
-
     top: 26px;
     left: 145px;
   }
@@ -38,7 +36,6 @@
 
 .catalog-main__more-title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -77,6 +74,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 153px;
@@ -133,6 +131,7 @@
   .catalog-main__list {
     margin: 0;
     margin-top: 167px;
+    justify-content: flex-start;
   }
 
   .catalog-main__more {

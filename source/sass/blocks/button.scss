@@ -7,11 +7,11 @@
   @include button;
 
   color: $color-ligth-text;
-  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
   display: block;
   text-align: center;
 
@@ -32,7 +32,6 @@
   display: block;
 
   color: $color-small-text;
-  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

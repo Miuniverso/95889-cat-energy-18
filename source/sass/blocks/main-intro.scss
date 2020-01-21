@@ -11,6 +11,7 @@
   left: 0;
   right: 0;
   height: 305px;
+
   background-position-x: center;
   background-repeat: no-repeat;
 
@@ -22,10 +23,10 @@
 
 .main-intro__title {
   color: $color-ligth-text;
-  font-family: $font-primary;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+
   padding-top: 28px;
   padding-bottom: 23px;
   margin: 0 auto;
@@ -34,11 +35,11 @@
 
 .main-intro__tagline {
   color: $color-ligth-text;
-  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+
   margin: 0;
 }
 
@@ -52,11 +53,11 @@
 .main-intro__button {
   @include button;
   color: $color-ligth-text;
-  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
   display: inline-block;
   vertical-align: top;
 
@@ -82,10 +83,10 @@
 
   .main-intro__title {
     color: $color-big-text;
-    font-family: $font-primary;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
+
     text-align: left;
     padding-top: 41px;
     max-width: 420px;
@@ -98,6 +99,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
+
     text-align: left;
     margin-left: 120px;
     padding-top: 19px;
@@ -114,9 +116,11 @@
     position: absolute;
     top: 270px;
     left: 119px;
+
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
+
     padding: 15px 29px 17px 26px;
   }
 }
@@ -132,8 +136,9 @@
       top: 0;
       right: 0;
       left: 50%;
+
       background-image: url("../img/index-background-desktop@1x.jpg");
-      // background-color: #62a639;
+      background-position-x: left;
       height: 696px;
       z-index: -1;
 
@@ -165,7 +170,7 @@
   .main-intro__button {
     // margin-left: 71px;
     // margin-top: 186px;
-    margin-top: -158px;
+    margin-top: -154px;
     margin-right: 815px;
     position: static;
   }

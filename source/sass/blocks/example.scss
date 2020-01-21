@@ -1,5 +1,6 @@
 .example {
   background-color: $bg-light;
+
   padding-bottom: 34px;
 }
 
@@ -7,7 +8,7 @@
   margin: 0;
   padding: 21px 0 0 20px;
   color: $color-big-text;
-  font-family: $font-primary;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -18,6 +19,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
   padding-top: 23px;
   margin: 0;
   padding-left: 20px;
@@ -26,11 +28,11 @@
 
 .example__result-total {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
   padding-top: 3px;
   display: block;
   text-align: center;
@@ -40,6 +42,7 @@
   padding: 0;
   margin: 34px auto 0;
   padding-bottom: 35px;
+
   display: block;
   position: relative;
   text-align: center;
@@ -61,6 +64,7 @@
   padding-left: 9px;
   padding-right: 5px;
   max-width: 67%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,6 +76,7 @@
   margin-bottom: 2px;
   flex-basis: 38%;
   height: 12px;
+
   border-radius: 6px;
   border: solid 1px $color-border;
   background-color: $color-ligth-text;
@@ -83,6 +88,7 @@
     left: 5px;
     width: 35px;
     height: 6px;
+
     border-radius: 3px;
     background-color: $color-green;
     cursor: pointer;
@@ -91,11 +97,11 @@
 
 .example__switch-label {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -123,6 +129,7 @@
 
   .example__title {
     font-size: 60px;
+
     padding-left: 30px;
     margin-top: 35px;
   }
@@ -130,6 +137,7 @@
   .example__desctiption {
     font-size: 16px;
     line-height: 24px;
+
     padding-left: 30px;
     padding-right: 40px;
     padding-top: 64px;
@@ -140,6 +148,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
     margin-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -221,6 +230,7 @@
     margin-bottom: 6px;
     flex-basis: 75%;
     height: 6px;
+
     border-radius: 2.5px;
     background-color: $color-border;
 
@@ -229,13 +239,14 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      background-color: #eaeaea;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-      border-radius: 50%;
       left: 50%;
       margin-left: -12px;
       top: -12px;
+
       cursor: pointer;
+      background-color: #eaeaea;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
 
       &:hover {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
@@ -247,12 +258,13 @@
       position: absolute;
       width: 8px;
       height: 8px;
-      background-color: $color-green;
-      border-radius: 50%;
       left: 50%;
       margin-left: -1px;
       top: -1px;
+
       cursor: pointer;
+      background-color: $color-green;
+      border-radius: 50%;
     }
   }
 
@@ -291,16 +303,14 @@
   }
 
   .example__title {
-    margin-top: -2px;
+    margin-top: -5px;
     margin-bottom: 76px;
     padding-left: 0;
-    // margin-left: -40px;
   }
 
   .example__desctiption {
     max-width: 36%;
     margin-top: 82px;
-    // margin-left: -40px;
     padding-left: 0;
   }
 
@@ -309,7 +319,6 @@
     flex-direction: column;
     align-items: start;
     padding-left: 0;
-    // margin-left: -40px;
   }
 
   .example__result-total {

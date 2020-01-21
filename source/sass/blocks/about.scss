@@ -1,31 +1,31 @@
 .about__title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  // padding-left: 22px;
+
   margin: 0;
-  // padding-top: -4px;
   margin-top: -3px;
   padding-left: 20px;
 }
 
 .about__list {
   list-style: none;
+
   padding: 14px 0 0;
 }
 
 .about__item {
   position: relative;
+  padding-right: 20px;
+  padding-left: 100px;
+  padding-bottom: 26px;
+
   color: $color-small-text;
   font-family: $font-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-right: 20px;
-  padding-left: 100px;
-  padding-bottom: 26px;
 
   &--composition::before {
     position: absolute;
@@ -34,6 +34,7 @@
     background-position: center;
     background-color: $color-green;
     background-repeat: no-repeat;
+
     width: 60px;
     height: 60px;
     left: 20px;
@@ -52,6 +53,7 @@
     background-position: center;
     background-color: $color-green;
     background-repeat: no-repeat;
+
     width: 60px;
     height: 60px;
     left: 20px;
@@ -70,6 +72,7 @@
     background-position: center;
     background-color: $color-green;
     background-repeat: no-repeat;
+
     width: 60px;
     height: 60px;
     left: 20px;
@@ -88,6 +91,7 @@
     background-position: center;
     background-color: $color-green;
     background-repeat: no-repeat;
+
     width: 60px;
     height: 60px;
     left: 20px;
@@ -112,7 +116,8 @@
 
   .about__title {
     font-size: 60px;
-    margin-top: 45px;
+
+    margin-top: 50px;
     padding-left: 0;
   }
 
@@ -125,6 +130,7 @@
   .about__item {
     font-size: 16px;
     line-height: 24px;
+
     flex-basis: 35%;
     padding-left: 0;
     padding-top: 109px;
@@ -140,11 +146,13 @@
       position: absolute;
       counter-increment: section;
       content: counter(section);
-      font-size: 281px;
       top: 88px;
       right: 20px;
+
+      font-size: 281px;
       font-family: $font-primary;
       color: $bg-light;
+
       z-index: -1;
     }
 
@@ -185,21 +193,25 @@
   }
 
   .about__title {
-    margin-top: 67px;
-    // margin-left: 80px;
+    margin-top: 70px;
   }
 
   .about__list {
-    // margin-left: 81px;
+    justify-content: flex-start;
   }
 
   .about__item {
+    width: 21%;
     margin-right: -32px;
-    flex-basis: 21%;
+    max-width: 21%;
     padding-top: 111px;
 
     &::after {
       right: 30px;
+    }
+
+    &:not(:nth-child(4n)) {
+      margin-right: 49px;
     }
   }
 }

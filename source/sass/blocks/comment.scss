@@ -1,6 +1,5 @@
 .comment__title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -43,16 +42,17 @@
   min-height: 124px;
   border: 1px solid $color-border;
   resize: none;
+
   margin-left: 20px;
   margin-right: 20px;
 
   &[placeholder] {
     color: $color-small-text;
-    font-family: $font-primary;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+
     padding-left: 14px;
     padding-right: 13px;
     padding-top: 12px;
@@ -62,17 +62,19 @@
 
 @media (min-width: $tablet) {
   .comment {
-    margin-top: 41px;
+    margin-top: 58px;
   }
 
   .comment__title {
     font-size: 36px;
+
     padding-left: 69px;
+    padding-top: 10px;
 
     &::after {
       z-index: -1;
       width: 100%;
-      top: 30px;
+      top: 26px;
     }
   }
 
@@ -103,7 +105,7 @@
 
 @media (min-width: $desktop) {
   .comment {
-    margin-top: 57px;
+    margin-top: 46px;
   }
 
   .comment__title {

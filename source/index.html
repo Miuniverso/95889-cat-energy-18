@@ -6,7 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js"></script>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();
+  </script>
 </head>
 
 <body>
@@ -40,6 +48,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main">
     <section class="main-intro container">
       <h1 class="main-intro__title">Функциональное питание для котов</h1>
@@ -51,7 +60,7 @@
 
         <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-        <img class="main-intro__image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy с курицей">
+        <img class="main-intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy с курицей">
       </picture>
       <a class="main-intro__button button" href="form.html">Подобрать программу</a>
     </section>
@@ -150,7 +159,6 @@
           <button class="example__switch-label" type="button" name="button"><span class="example__switch-label-text">Стало</span></button>
         </div>
       </div>
-
     </section>
     <section class="address">
       <h2 class="visually-hidden">Адрес магазина Cat Energy</h2>

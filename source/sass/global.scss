@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 
   counter-reset: section;
+  font-family: $font-primary;
 }
 
 .visually-hidden {

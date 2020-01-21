@@ -19,6 +19,14 @@
   @include input;
 
   flex-grow: 1;
+
+  &:focus:required:invalid {
+    border-color: #ff8282;
+  }
+
+  &focus:optional:invalid {
+    border-color: #ff8282;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -28,6 +36,7 @@
 
   .cat-info__label {
     font-size: 20px;
+
     padding-right: 18px;
     padding-left: 21px;
   }
@@ -35,6 +44,8 @@
   .cat-info__data {
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 52px;
+    box-sizing: border-box;
 
     &:active {
       padding-top: 9px;

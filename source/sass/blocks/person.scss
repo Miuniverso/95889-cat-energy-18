@@ -1,27 +1,27 @@
 .person__title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 
   padding-left: 19px;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 34px;
   margin: 0;
-  z-index: 1;
 
+  z-index: 1;
   position: relative;
 
   &::after {
     position: absolute;
     content: "";
     height: 3px;
-    background-color: $color-green;
     width: 100%;
-    top: 42px;
+    top: 44px;
     left: 50%;
     z-index: -1;
+
+    background-color: $color-green;
   }
 }
 
@@ -31,69 +31,71 @@
 
 .person__text {
   background-color: $color-ligth-text;
+
   padding-left: 0;
   padding-right: 21px;
-
   display: inline-block;
-  // margin-left: 10px;
 }
 
 .person__info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-
-  margin: 0;
-  padding-bottom: 15px;
-
+  flex-wrap: nowrap;
+  margin: 0 0 15px;
   position: relative;
 }
 
 .person__label {
   @include label;
-
   padding-left: 20px;
   padding-right: 11px;
 }
 
 .person__data {
   @include input;
-
   flex-grow: 1;
   position: relative;
   margin-right: 20px;
+  box-sizing: border-box;
 
-  &--error {
+  &[placeholder] {
+    padding-right: 50px;
+  }
+
+  &[id="person-telephone"] {
+    width: 204px;
+  }
+
+  &[id="person-email"] {
+    width: 219px;
+  }
+
+  &:active + .person__icon,
+  &:focus + .person__icon {
+    fill: $color-green;
+  }
+
+  &:focus:invalid {
     border: 2px solid #ff8282;
+
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 15px;
   }
+
+  &:focus:invalid + .person__icon {
+    fill: #ff8282;
+  }
 }
 
-// не могу вставить иконки :(
-
-.person__data[type="email"]::after {
+.person__icon {
   position: absolute;
-  content: "";
-  display: block;
-  background-image: url("../img/icon-mail.svg");
-  width: 17px;
-  height: 13px;
-  // top: 0;
-  right: 30px;
-}
-
-.person__data[type="tel"]::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  fill: $color-title;
+  margin: auto;
   top: 0;
-  right: 0;
+  bottom: 0;
+  right: 34px;
 }
 
 @media (min-width: $tablet) {
@@ -103,6 +105,7 @@
 
   .person__title {
     font-size: 36px;
+
     margin-bottom: 46px;
     padding-left: 69px;
 
@@ -138,10 +141,16 @@
 
   .person__data {
     margin-right: 20px;
+    height: 56px;
+    box-sizing: border-box;
 
     &[placeholder] {
       font-size: 20px;
     }
+  }
+
+  .person__icon {
+    right: 85px;
   }
 }
 
@@ -157,12 +166,12 @@
     &::after {
       width: 100%;
       left: 0;
-      top: 44px;
-
+      top: 46px;
       position: absolute;
       content: "";
       z-index: -1;
       height: 3px;
+
       background-color: $color-green;
     }
   }
@@ -173,6 +182,7 @@
 
   .person__text {
     background-color: $color-ligth-text;
+
     padding-left: 39px;
     padding-right: 42px;
     margin-left: 0;
@@ -198,5 +208,9 @@
 
   .person__data {
     margin-right: 0;
+  }
+
+  .person__icon {
+    right: 20px;
   }
 }
