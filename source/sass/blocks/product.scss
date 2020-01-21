@@ -20,7 +20,7 @@
 
 .product__title {
   color: $color-big-text;
-  font-family: $font-primary;
+  // font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -96,15 +96,12 @@
   .product__info-string {
     border-bottom: 1px solid $color-border;
     display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 5px;
     position: relative;
   }
   // for IE
   .product__definition {
-    // margin-left: auto;
     position: absolute;
     right: 0;
   }
@@ -139,8 +136,6 @@
   }
 
   .product__info-string {
-    // display: flex;
-    // justify-content: space-between;
     padding-top: 6px;
     padding-bottom: 6px;
   }

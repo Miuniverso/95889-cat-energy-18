@@ -1,6 +1,5 @@
 .comment__title {
   color: $color-big-text;
-  font-family: $font-primary;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -48,7 +47,6 @@
 
   &[placeholder] {
     color: $color-small-text;
-    font-family: $font-primary;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -62,7 +60,7 @@
 
 @media (min-width: $tablet) {
   .comment {
-    margin-top: 41px;
+    margin-top: 58px;
   }
 
   .comment__title {
@@ -103,7 +101,7 @@
 
 @media (min-width: $desktop) {
   .comment {
-    margin-top: 57px;
+    margin-top: 44px;
   }
 
   .comment__title {

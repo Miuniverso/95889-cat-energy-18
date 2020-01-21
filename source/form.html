@@ -55,15 +55,15 @@
           <h2 class="visually-hidden">Данные кота</h2>
           <p class="cat-info">
             <label class="cat-info__label" for="cat-name">Имя:*</label>
-            <input class="cat-info__data" id="cat-name" type="text" name="name" placeholder="Барсик">
+            <input class="cat-info__data" id="cat-name" type="text" name="name" placeholder="Барсик" required>
           </p>
           <p class="cat-info">
             <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-            <input class="cat-info__data" id="cat-weight" type="text" name="weight" placeholder="7">
+            <input class="cat-info__data" id="cat-weight" type="number" name="weight" placeholder="7" required>
           </p>
           <p class="cat-info">
             <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-            <input class="cat-info__data" id="cat-age" type="text" name="age" placeholder="7">
+            <input class="cat-info__data" id="cat-age" type="number" name="age" placeholder="7">
           </p>
         </div>
         <div class="form-main__target target">
@@ -92,14 +92,14 @@
         <div class="person__info-wrapper container">
           <p class="person__info">
             <label class="person__label" for="person-email">E-mail:*</label>
-            <input class="person__data" id="person-email" type="email" placeholder="kuklachev@gmail.com">
+            <input class="person__data" id="person-email" type="email" placeholder="kuklachev@gmail.com" required>
             <svg class="person_icon person_icon--email" width="17" height="13" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#sp-icon-mail"></use>
             </svg>
           </p>
           <p class="person__info">
             <label class="person__label" for="person-telephone">Телефон:*</label>
-            <input class="person__data" id="person-telephone" type="tel" placeholder="8 (960) 900-60-90">
+            <input class="person__data" id="person-telephone" type="tel" placeholder="8 (960) 900-60-90" required>
             <svg class="person_icon person_icon--phone" aria-hidden="true" focusable="false" width="20" height="20">
               <use xlink:href="img/sprite.svg#sp-icon-phone"></use>
             </svg>

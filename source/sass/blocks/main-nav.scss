@@ -1,6 +1,4 @@
 .main-nav__list {
-  font-family: $font-primary;
-
   list-style: none;
   text-transform: uppercase;
   text-align: center;
@@ -9,9 +7,8 @@
 }
 
 .main-nav__item {
-  padding-top: 21px;
+  padding-top: 22px;
   padding-bottom: 24px;
-  // border: 1px dotted #e6e6e6;
 }
 
 .main-nav__item-link {

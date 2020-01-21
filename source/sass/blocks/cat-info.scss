@@ -20,8 +20,11 @@
 
   flex-grow: 1;
 
-  &:active:invalid,
-  &:focus:invalid {
+  &:focus:required:invalid {
+    border-color: #ff8282;
+  }
+
+  &:optional:invalid {
     border-color: #ff8282;
   }
 }

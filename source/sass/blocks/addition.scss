@@ -9,7 +9,6 @@
 
 .addition__title {
   color: $color-title;
-  font-family: $font-primary;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -44,7 +43,6 @@
     flex-wrap: wrap;
 
     border-bottom: 1px solid #e6e6e6;
-    // border-top: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
 
